@@ -97,11 +97,11 @@ a, a:hover {
 
 @font-face {
     font-family:Nexa;
-    src:url(font/NexaFreeBoldwebfont.ttf);
+    src:url(../font/NexaFreeBoldwebfont.ttf);
 }
 @font-face {
     font-family:NexaL;
-    src:url(font/nexa_light-webfont.ttf);
+    src:url(../font/nexa_light-webfont.ttf);
 }
 /* Header Begin */
 .header {
@@ -196,7 +196,7 @@ a, a:hover {
         padding: 15px;
         width: 300px;
         border: none;
-        background: #fff url(images/clock-.png) 265px center no-repeat;
+        background: #fff url(../images/clock-.png) 265px center no-repeat;
         -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.2);
                 box-shadow: 1px 1px 1px rgba(0,0,0,.2);
     }
@@ -217,10 +217,10 @@ a, a:hover {
      .social a:hover {
        text-decoration: underline;
     }
-    .tw {background: url(images/tw.png) 0px center no-repeat;}
-    .f {background: url(images/fas.png) 0px center no-repeat;}
-    .rss{background: url(images/rss.png) 0px center no-repeat;}
-    .mail{background: url(images/mail.png) 0px center no-repeat;}
+    .tw {background: url(../images/tw.png) 0px center no-repeat;}
+    .f {background: url(../images/fas.png) 0px center no-repeat;}
+    .rss{background: url(../images/rss.png) 0px center no-repeat;}
+    .mail{background: url(../images/mail.png) 0px center no-repeat;}
 /* panel-header begin*/
 .feature-img {
     position: relative;
@@ -274,8 +274,8 @@ a, a:hover {
     padding-top: 5px;
     padding-left: 137px;
     background: 
-        url(/images/clock2.png) 110px 5px no-repeat,
-        url(/images/plus.png) 0px 5px no-repeat;
+        url(../images/clock2.png) 110px 5px no-repeat,
+        url(../images/plus.png) 0px 5px no-repeat;
 }
 .feature-txt h3:before{
     content: "";
@@ -440,11 +440,11 @@ h4.title-news {
 }
 .rate span {
     height: 14px;
-	  background: url(/images/star.png)  repeat-x;
+	  background: url(../images/star.png)  repeat-x;
 }
 .selected .rate span {
     height: 14px;
-    background: url(/images/star2.png)  repeat-x;
+    background: url(../images/star2.png)  repeat-x;
 }
 
 .news-item-article {
