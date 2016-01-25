@@ -1,175 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Good Inc</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="font.css">
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="container clearfix">
-        <div class="logo left">
-          <a href="#"><span class="logo-b">g</span></a>
-          <span class="logo-text">Good Inc.</span>
-        </div>
-      </div>
-    </div>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Typography</title>
+    <style>
+      /* reset browser styles */
+      html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+      }
+      article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1.2;
+      }
+      ol { 
+        padding-left: 1.4em;
+        list-style: decimal;
+      }
+      ul {
+        padding-left: 1.4em;
+        list-style: square;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      } 
 
-    <div class="nav">
-      <div class="container clearfix">
-        <ul class="navigation left">
-        <li><span><a href="#" class="active">Portfolio</a></span></li>
-          <li><span><a href="#">Services</a></span></li>
-          <li><span><a href="#">Staft</a></span></li>
-          <li><span><a href="#">Articles</a></span></li>
-          <li><span><a href="/Muzik/index.html">Muzik</a></span></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container clearfix">
-      <div class="panel-header clearfix">
-        <div class="search left">
-          <form>
-            <input type="text" placeholder="Search for somthing here">
-          </form>
-        </div>
-        <div class="social">
-            <a href="#" class="tw">Twitter</a>
-            <a href="#" class="f">Facebock</a>
-            <a href="#" class="rss">RSS</a>
-            <a href="#" class="mail">Mail</a>
-        </div>
-      </div>
-      
-      <div class="feature clearfix">
-          <div class="feature-img left"><img src="images/feature.jpg" alt="image">
-              <div class="caption">
-                  <p>Good Inc. image caption to go here</p>
-              </div>
-          </div>
-          <div class="feature-txt left">
-              <h3>Housework can't kill you,<br> but why take a chance?  </h3>
-              <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit...
-</p>
-              <p class="date">14th April 2013</p>
-          </div>
-      </div>
-      <!-- Article Start -->
-       <div class="article">
-           <div class="artical-item">
-              <a  href="#" class="article-link">
-               <img src="images/article-item1.jpg" width="300" height="190" alt="">
-               <h3>Taste & Sounds from Thailand</h3>
-               <p>We've made some small changes to BlazRobar.com...</p>
-               <div class="banner">&nbsp;
-                   <a href="#" class="plus">+</a>
-               </div>
-               </a>
-           </div>
-           <div class="artical-item">
-               <a  href="#" class="article-link">
-               <img src="images/article-item2.jpg" width="300" height="190" alt="">
-               <h3>BlazRobar.com is awesome for PSD</h3>
-               <p>We've made some small changes to BlazRobar.com...</p>
-               <div class="banner">&nbsp;
-                   <a href="#" class="plus">+</a>
-               </div>
-               </a>
-           </div>
-           <div class="artical-item">
-               <a  href="#" class="article-link">
-               <img src="images/article-item3.jpg" width="300" height="190" alt="">
-               <h3>Nice Looking  Mountains Ah?</h3>
-               <p>We've made some small changes to BlazRobar.com...</p>
-               <div class="banner">&nbsp;
-                   <a href="#" class="plus">+</a>
-               </div>
-               </a> 
-           </div>
-       </div>
-       <!-- Article END -->
-       <!-- Middle block Start -->
-       <div class="middle clearfix">
-           <div class="sidebar right">
-               <div class="news-bl">
-                       <img src="images/article-item4.jpg" alt="">
-                       <h3>Nice Looking  Mountains Ah?</h3>
-                       <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at volutpat elit. Proin vel nisl in orci venenatis suscipit eget sed lectus.</p>
-                       <div class="banner">&nbsp;
-                           <a href="#" class="plus">+</a>
-                       </div>
-               </div>
-           </div>
-           <div class="content">
-               <div class="news-item">
-                   <h4 class="title-news"><a href="#">Good Inc. Good Choice.</a></h4>
-                   <div class="news-panel">
-                       <span class="n-date">14th January 2013</span>
-                       <span class="separat">&nbsp;</span>
-                       <span class="n-coment">32 Comments</span>
-                       <span class="separat">&nbsp;</span>
-                       <span class="rate"><span style="width: 96%;"></span></span>
-                       <span class="voit">124 Votes</span>
-                   </div>
-                   <p>I believe that if life gives you lemons, you should make lemonade...                         And try to<br>find somebody whose life has given them vodka, and have a party.</p>
-               </div>
-               <div class="news-item selected">
-                   <h4 class="title-news"><a href="#">Behind every great man is a woman rolling</a></h4>
-                   <div class="news-panel">
-                       <span class="n-date">13th January 2013</span>
-                       <span class="separat">&nbsp;</span>
-                       <span class="n-coment">312 Comments</span>
-                       <span class="separat">&nbsp;</span>
-                       <span class="rate"><span style="width: 80%;"></span></span>
-                       <span class="voit">124 Votes</span>
-                   </div>
-                   <p>Quisque accumsan eleifend dolor, nec bibendum nibh ultricies at. Nunc convallis risus sit amet augue bibendum non lobortis eros interdum. Maecenas quis risus felis, at...</p>
-               </div>
-               
-               <div class="news-item-article">
-                  <img src="images/article-item5.jpg" alt="">
-                   <h4 class="title-news"><a href="#">I like long walks, especially when they are taken by people who really annoy me. 
-                       </a></h4>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu turpis purus. Pellentesque ullamcorper mauris vitae sapien bibendum tincidunt.Check leo dignissim + </p>
-               </div>
-           </div>
-       </div>
+      } 
+      html {
+        font-family: PTSans, Arial, sans-serif;
+        font-size: 62.5%;
+        background: rgb(225,238,253) url(images/bg_body.png) repeat-x;
+      }
+      .main {
+        width: 740px;
+        margin: 0 auto;
+        padding: 0 10px;
+        border: 4px solid white;
+        background: #7e1ae2;
         
+      }
+      .main h1 {
+        color: rgb(252,102,0);
+        font-family: "Arial Black", Arial, Helvetica, sans-serif;
+        font-size: 4em;
+        text-shadow: 4px 3px 6px rgba(0,0,0,.5);
+      }
+      .main h1 strong {
+        font-size: 150px;
+        color: white;
+        line-height: 1em;
+        margin-right: -1.25em;
+      }
+
+      .main h2 {
+        font: bold 3.5em "Hoefler Text", Garamond, Times, serif;
+        color: rgb(242, 247, 255);
+        border-bottom: 1px solid rgb(200,200,200);
+        margin-top: 25px;
+      }
+      .main h3 {
+        color: rgb(255,102,0);
+        font-size: 1.9em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 25px;
+        margin-bottom: 10px;
+      }
+      .main p {
+        font-size: 1.5em;
+        line-height: 150%;
+        margin-right: 50px;
+        margin-bottom: 10px;
+      }
+      .main p:first-line {
+        font-weight: bold;
+        color: rgb(153,153,153);
+      }
+      
+
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1><strong>My</strong>Work</h1>
+      
+      <h2>Несколько примеров моей верстки.</h2>
+      <p>
+      1.” music shop” одностраничный, не адаптивно, подключено два простых скрипта фильтр цен и кнна верх.
+      <a href="Muzik/index.html">https://www.youtube.com/watch?v=YOvqf5XOdA8</a>
+      </p>
+      <p> 
+      2.”Nerds” не адаптивно, две страници Главная и Магазин. Подключен слайдер, попап окно “связатся  с нами” на главной странице.
+      <a href="Nerds/index.html">https://www.youtube.com/watch?v=YOvqf5XOdA8</a>
+      </p>
+      <p>
+      3. Лендинг школы английского языка. Адаптивно, bootstrap и media queries. Использовал препроцесор sass, скрипты такие как табы, паралакс, owl-карусель и др.
+      <a href="ProEng/index.html">https://www.youtube.com/watch?v=YOvqf5XOdA8</a>
+      </p> 
     </div>
-        <div class="footer clearfix">
-         <div class="container">
-          <div class="footer-menu clearfix">
-              <div class="logo left">
-                  <a href="#"><span class="logo-b">g</span></a>
-                  <span class="logo-text">Good Inc.</span>
-              </div>
-              <ul class="navigation right">
-                  <li><span><a href="#" class="active">Portfolio</a></span></li>
-                  <li><span><a href="#">Services</a></span></li>
-                  <li><span><a href="#">Staft</a></span></li>
-                  <li><span><a href="#">Articles</a></span></li>
-                  <li><span><a href="#">Contact</a></span></li>
-              </ul>
-          </div>
-          <div class="footer-copy">
-              <ul class="footer-menu-b clearfix">
-                 <li><a href="#">About us </a></li>
-                 <li><a href="#">Footer Links here</a></li>
-                 <li><a href="#">Privacy </a></li>
-                 <li><a href="#">Page Links also</a></li>
-             </ul>
-              <p>As cross as a hoon my built like a op shop. We're going bored sh*tless heaps she'll be right budgie smugglers. Grab us a durry mate she'll be right dunny rat. <br> She'll be right larrikin with skite. As stands out like kero it'll be truckie.</p>
-          </div>
-        </div>
-      </div>
-  </div>
-    
-    
-    
-</body>
+  </body>
 </html>
