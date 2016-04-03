@@ -1,5 +1,34 @@
 $(function() {
 
+	$("form select").selectize();
+
+	$(".carousel-brands").owlCarousel({
+		loop:true,
+		margin: 30,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		responsive:{
+				0:{
+						items:1,
+				},
+				520:{
+						items:1,
+				},
+				560:{
+						items:2,
+				},
+				768:{
+						items:2,
+				},
+				992:{
+						items:3,
+				},
+				1200:{
+						items:4,
+				}
+		}
+	});
+
 	$(".carousel-eq").owlCarousel({
 		loop:true,
 		responsive:{
@@ -24,8 +53,18 @@ $(function() {
 		}
 	});
 
-	$(".s-direct .item-vertical p").equalHeights();
-	$(".carousel-text").equalHeights();
+	function heightses() {
+		$(".s-direct .item-vertical p").height('auto').equalHeights();
+		$(".carousel-text").height('auto').equalHeights();
+		$(".testimonials-head").height('auto').equalHeights();
+		$(".testimonials-desc").height('auto').equalHeights();
+	}
+
+	$(window).resize(function() {
+		heightses();
+	});
+
+	heightses();
 
 	$(".portfolio-item").each(function(e) {
 
@@ -140,16 +179,6 @@ $(function() {
 		});
 		return false;
 	});
-
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
