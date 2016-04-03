@@ -10,6 +10,7 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.2.min.css" />
 	<link rel="stylesheet" href="libs/myfonts/stylesheet.css" />
+	<link rel="stylesheet" href="libs/animate/animate.min.css" />
 	<link rel="stylesheet" href="libs/owl/assets/owl.carousel.css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
@@ -76,7 +77,7 @@
 										</ul>
 									</div>
 									<div class="btn-wrapp">
-										<a href="#" class="button btn-red">Начать обучение</a>
+										<a href="#hidden-form" class="button btn-red popup-c">Начать обучение</a>
 									</div>
 								</div>
 							</div>
@@ -303,10 +304,28 @@
 	</div>
 </footer>
 
-	<div class="hidden"></div>
+	<div class="hidden">
+		<form id="hidden-form">
+			<h2 class="form-title">Связаться с нами</h2>
+			<label for="name">Ваше имя:</label>
+			<input type="text" id="name" required>
+			<label for="phone">Ваше телефон:</label>
+			<input type="text" id="phone" required>
+			<label>Ваше город:</label>
+			<select name="citi">
+				<option>Киев</option>
+				<option>Харьков</option>
+			</select>
+			<div class="btn-wrapp">
+				<button class="button">Отправить заявку</button>
+			</div>
+		</form>
+	</div>
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/stellar/jquery.stellar.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>

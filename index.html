@@ -1,112 +1,91 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CSS Typography</title>
-    <style>
-      /* reset browser styles */
-      html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-      table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
-      figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-      time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-      }
-      article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-        display: block;
-      }
-      body {
-        line-height: 1.2;
-      }
-      ol { 
-        padding-left: 1.4em;
-        list-style: decimal;
-      }
-      ul {
-        padding-left: 1.4em;
-        list-style: square;
-      }
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      } 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
 
-      } 
-      html {
-        font-family: PTSans, Arial, sans-serif;
-        font-size: 62.5%;
-        background: rgb(225,238,253) url(images/bg_body.png) repeat-x;
-      }
-      .main {
-        width: 740px;
-        margin: 0 auto;
-        padding: 0 10px;
-        border: 4px solid white;
-        background: #7e1ae2;
-        
-      }
-      .main h1 {
-        color: rgb(252,102,0);
-        font-family: "Arial Black", Arial, Helvetica, sans-serif;
-        font-size: 4em;
-        text-shadow: 4px 3px 6px rgba(0,0,0,.5);
-      }
-      .main h1 strong {
-        font-size: 150px;
-        color: white;
-        line-height: 1em;
-        margin-right: -1.25em;
-      }
+  <div class="email-wrapper">
 
-      .main h2 {
-        font: bold 3.5em "Hoefler Text", Garamond, Times, serif;
-        color: rgb(242, 247, 255);
-        border-bottom: 1px solid rgb(200,200,200);
-        margin-top: 25px;
-      }
-      .main h3 {
-        color: rgb(255,102,0);
-        font-size: 1.9em;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-top: 25px;
-        margin-bottom: 10px;
-      }
-      .main p {
-        font-size: 1.5em;
-        line-height: 150%;
-        margin-right: 50px;
-        margin-bottom: 10px;
-      }
-      .main p:first-line {
-        font-weight: bold;
-        color: rgb(153,153,153);
-      }
-      
+    <div class="email-container">
 
-    </style>
-  </head>
+      <div class="email-header ">
+       <div class="img-wrap">
+         <img src="img/i.jpg" alt="Korobeynik_Yura">
+       </div>
+       <h1>Коробейник Юрий</h1><br>
+       <div class="phone">
+        <i class="fa fa-phone-square"></i> <span>+38-093-106-2008</span>
+       </div><br>
+       <div class="mail">
+        <i class="fa fa-envelope"></i><span>korobeynik77@gmail.com</span>
+       </div><br>
+       <div class="map">
+        <i class="fa fa-map-marker"></i><span>Харьков, ул.Ак.Павлова, 134-б</span>
+       </div>
+       <div class="social">
+        <a href="https://vk.com/yura_korobeynik"><i class="fa fa-vk"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100002186946969"><i class="fa fa-facebook-official"></i></a>
+       </div>
+      </div>
+      <div class="email-content">
+       <table>
+         <tr>
+           <td class="title">Образование:</td>
+           <td>Высшее, по образованию я юрист.</td>
+         </tr>
+         <tr>
+           <td class="title">Опыт работы:</td>
+           <td>У меня нет опыта в работе с комерческими проэктами, но я много верстал для себя, ниже Вы можете посмотреть некоторые мои работы.</td>
+         </tr>
+         <tr>
+           <td class="title">Навыки:</td>
+           <td>Я изучаю веб-разработку 9 месяцев, уже имею не плохие знания в <b>HTML & CSS</b>, знания в <b>Javascript</b> на начальном уровне, базовое знание <b>Photoshop</b>, немного хуже знаю inkscape и illustrator(например могу создать икон.шрифт, изображения из раст. в вектор и тд.)<b>Английский</b> Pre - Intermediate.Так же знаю и использую в своих проэктах: <b>Git, Bootstrap, Sass и Bourbon, Gulp, Bower, Zurb Inliner. Опыт работы c оптимизацией под Google Page Speed</b></td>
+         </tr>
+         <tr>
+           <td class="title">Коротно о себе:</td>
+           <td>Есть большое желание развиваться и расти в сторону frond-end,постоянно совершенствовать свои навыки. Я довольно бысто изучаю новою информацию особенно если это нравится.</td>
+         </tr>
+       </table>
+      </div>
+      <div class="email-portfolio">
+        <div class="portfolio-item">
+          <a href="Law/index.html" target="_blank">
+            <img src="img/items/law.jpg" alt="law">
+            <button class="button">Просмотр</button>
+          </a>
 
-  <body>
-    <div class="main">
-      <h1><strong>My</strong>Work</h1>
-      
-      <h2>Несколько примеров моей верстки.</h2>
-      <p>
-      1.” music shop” одностраничный, не адаптивно, подключено два простых скрипта фильтр цен и кнопкаа верх.
-        <a href="Muzik/index.html">http://korobeynik.github.io/Muzik/index.html</a>
-      </p>
-      <p> 
-      2.”Nerds” не адаптивно, две страници Главная и Магазин. Подключен слайдер, попап окно “связатся  с нами” на главной странице.
-        <a href="Nerds/index.html">http://korobeynik.github.io/Nerds/index.html</a>
-      </p>
-      <p>
-      3. Лендинг школы английского языка. Адаптивно, bootstrap и media queries. Использовал препроцесор sass, скрипты такие как табы, паралакс, owl-карусель и др.
-        <a href="ProEng/index.html">http://korobeynik.github.io/ProEng/index.html</a>
-      </p> 
+        </div>
+        <div class="portfolio-item">
+          <a href="ProEng/index.html" target="_blank">
+            <img src="img/items/pro.jpg" alt="ProEnglish">
+            <button class="button">Просмотр</button>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Travelo/index.html" target="_blank">
+            <img src="img/items/travelo.jpg" alt="Travelo">
+            <button class="button">Просмотр</button>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="Muzik/index.html" target="_blank">
+            <img src="img/items/muzik.jpg" alt="MuzikShop">
+            <button class="button">Просмотр</button>
+          </a>
+        </div>
+      </div>
+
     </div>
-  </body>
+
+  </div>
+
+
+
+
+
+</body>
 </html>

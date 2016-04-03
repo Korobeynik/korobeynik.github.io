@@ -36,6 +36,9 @@
     .profile-item {
       width: 100%;
     }
+    .s-contacts h2 {
+      margin-bottom: 20px;
+    }
 
 }
 /* Extra Small Devices, Phones */
@@ -76,6 +79,16 @@
       text-align: center;
       font-size: 20px;
       line-height: 20px;
+    }
+    .s-contacts .tabs .tab {
+      padding: 0 20px;
+    }
+    .bottom-phone .tab-content {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .s-contacts h2 {
+      font-size: 40px;
     }
 }
 

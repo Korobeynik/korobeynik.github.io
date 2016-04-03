@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>The Law Society</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+
+	<header class="main-header">
+
+		<div class="top-line clearfix">
+
+			<div class="container">
+				<div class="row">
+					<!-- Logotip -->
+					<div class="col-lg-3 col-md-2 col-sm-6 col-xs-4">
+						<a href="index.html"><img class="logo" src="img/logo.png" alt="logotip"></a>
+					</div>
+
+					<div class="col-lg-2 col-lg-push-7 col-md-9 col-sm-5 col-xs-8">
+						<div class="phone-wrap">
+							<div class="phone">(800) 100-777-99</div>
+						</div>
+					</div>
+
+					<!-- Main menu -->
+					<div class="col-lg-7 col-lg-pull-2">
+						<nav class="top-menu cl-effect">
+							<ul>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">Practice</a></li>
+								<li><a href="#">Advocacy</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Mobile menu -->
+					<div class="hidden-lg col-xs-12">
+						<a href="#" class="togle-menu"><span></span></a>
+					</div>
+					<div class="col-xs-12">
+						<nav class="top-menu hidden-menu hidden-lg clearfix">
+							<ul>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">Practice</a></li>
+								<li><a href="#">Advocacy</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+
+		</div><!-- End Top -line -->
+
+		<div class="container">
+			<div class="row">
+				<div class="header-wrap clearfix">
+					<div class="col-md-8">
+						<div class="header-content">
+							<h1>The Law Society</h1>
+							<ul>
+								<li><a href="#">The Future of Legal Services report</a></li>
+								<li><a href="#">The future of Britain in Europe - impact on legal services</a></li>
+								<li><a href="#">Celebrating 10 years of Excellence</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<form class="forms">
+							<h4>Application:</h4>
+							<p>Leave the application and we will contact you
+								for 15 minutes in the working
+								time from 10:00 to 18:00 c Mon-Sat.</p>
+							<label>Your name:</label>
+							<input type="text" name="name" required>
+							<label>Your phone:</label>
+							<input type="text" name="phone" required>
+							<div class="btn-wrap">
+								<button class="buttons form-button">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="arrow-wrap">
+			<div class="icon-arrow">
+
+			</div>
+		</div>
+
+	</header>
+
+<!-- Section one -->
+	<section class="s-home section-one">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>Exclusive: Recent Practical Guidance</h2>
+							<p><strong>Get exclusive</strong> to some of our members-only <a href="#"> access</a> —  practice support articles and guidance. Touch the green arrow above to see more</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="section-content-wrap">
+			<div class="section-content">
+				<div class="container">
+					<div class="row">
+
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Top tips for tribunal advocacy</a></h4>
+										<p>How advocates can shine in a tribunal setting</p>
+									</div>
+								</div>
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Grasping the nettle</a></h4>
+										<p>How solicitor advocates can survive and thrive in the aftermath</p>
+									</div>
+								</div>
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Top tips for the Crown Court</a></h4>
+										<p>Ronnie Manek on how advocates can hold their own and win the judge’s </p>
+									</div>
+								</div>
+
+					</div>
+
+					<div class="row">
+								<div class="col-sm-8">
+									<div class="info-item">
+										<h4><a href="#">Doing your duty</a></h4>
+										<p>Adam Tear on how the rise of litigants in person has thrown </p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="info-item">
+										<h4><a href="#">Grasping the nettle</a></h4>
+										<p>How solicitor advocates can survive and thrive in the aftermath</p>
+									</div>
+								</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-triangle-bg">
+				<img class="triangle-logo" src="img/logo2.png" alt="logo">
+				<img class="femida-img hidden-xs" src="img/femida.svg" alt="image">
+			</div>
+		</div>
+
+		<div class="section-content-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 info-item-wrap">
+						<div class="info-item">
+							<h4><a href="#">Top tips for tribunal advocacy</a></h4>
+							<p>How advocates can shine in a tribunal setting</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4 info-item-wrap">
+						<div class="info-item">
+							<h4><a href="#">Grasping the nettle</a></h4>
+							<p>How solicitor advocates can survive and thrive in the aftermath</p>
+						</div>
+					</div>
+
+					<div class="col-sm-4 info-item-wrap">
+						<div class="info-item">
+							<h4><a href="#">Top tips for the Crown Court</a></h4>
+							<p>Ronnie Manek on how advocates can hold their own and win the judge’s </p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div><!-- Section content-bottom End-->
+
+		<div class="section-bottom">
+			<div class="btn-wrap">
+				<button class="buttons">Order Service</button>
+			</div>
+		</div>
+
+	</section><!--Section one end-->
+
+
+	<section class="s-home section-two">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>About the Junior Lawyers Division</h2>
+							<p><strong>Junior Lawyers Division</strong> – the community for LPC students, LPC graduates, trainee solicitors and solicitors up to five years qualified.Your Junior Lawyers Division is dedicated to meeting the needs of all LPC students, LPC graduates (including those working as paralegals)</p>
+							<h3>Top stories <a href="#">Latest news</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-wrap">
+			<div class="section-two-items">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/1.svg" alt="img1">
+								</div>
+								<p>LYLG joint festive drinks party 2015</p>
+							</a>
+						</div><!-- 1 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/2.svg" alt="img1">
+								</div>
+								<p>International Women’s Day (7 March)</p>
+							</a>
+						</div><!-- 2 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/3.svg" alt="img1">
+								</div>
+								<p>European Young Bar Association skiing trip - January 2016</p>
+							</a>
+						</div><!-- 3 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/4.svg" alt="img1">
+								</div>
+								<p>European Young Bar Association skiing trip - January 2016</p>
+							</a>
+						</div><!-- 4 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/5.svg" alt="img1">
+								</div>
+								<p>The session has been developed</p>
+							</a>
+						</div><!-- 5 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/6.svg" alt="img1">
+								</div>
+								<p>The session has been developed</p>
+							</a>
+						</div><!-- 6 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-2">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/7.svg" alt="img1">
+								</div>
+								<p>The Law Society, London</p>
+							</a>
+						</div><!-- 7 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/8.svg" alt="img1">
+								</div>
+								<p>The Law Society, London</p>
+							</a>
+						</div><!-- 8 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/3.svg" alt="img1">
+								</div>
+								<p>Retraining: an introduction to wills</p>
+							</a>
+						</div><!-- 9 item-->
+
+						<div class="col-md-2 col-sm-3 col-xs-6">
+							<a href="#" class="section-two-item">
+								<div class="img-wrap">
+									<img src="img/icons/section_2/10.svg" alt="img1">
+								</div>
+								<p>Retraining: an introduction to wills</p>
+							</a>
+						</div><!-- 10 item-->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="section-bottom">
+			<div class="btn-wrap">
+				<button class="buttons">Order tracking</button>
+			</div>
+		</div>
+	</section>
+
+<!-- Section three-->
+	<section class="s-home s-dark section-three">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>Welcome to the Junior Lawyers Division website</h2>
+							<p>The JLD represents approximately <strong>75,000 individuals.</strong> Membership is automatic for LPC students and graduates, trainee solicitors and solicitors up to five years qualified. Through our Executive Committee, National Committee, and network of local groups, we engage with our members on both a political and social level.</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="section-content-wrap">
+			<div class="section-content">
+				<div class="container">
+					<div class="row">
+
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Representing current</a></h4>
+										<p>Representing current and future junior lawyers in relation to the SRA </p>
+									</div>
+								</div>
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Providing information</a></h4>
+										<p>Providing information on the increasing alternative routes to qualification</p>
+									</div>
+								</div>
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Supporting solicitors</a></h4>
+										<p>supporting solicitors up to five years PQE in their career and skills progression </p>
+									</div>
+								</div>
+
+
+								<div class="col-sm-4">
+									<div class="info-item info-item-wrap">
+										<h4><a href="#">Best practice guidance</a></h4>
+										<p>Best practice guidance, The Law Society has published</p>
+									</div>
+								</div>
+
+								<div class="col-sm-4 hidden-xs hidden-sm">
+									<div class="info-item">
+										<div class="s-three-img-wrapp">
+											<img src="img/icons/section_3/folder.svg" alt="img">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="info-item info-item-wrap">
+										<h4><a href="#">JLD Update newsletter - February 2016</a></h4>
+										<p>The Law Society Diversity Access Scheme (DAS) opens for applications today, 3 February.</p>
+									</div>
+								</div>
+
+
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Are you 3-5 years PQE?</a></h4>
+										<p>The Law Society Diversity Access Scheme (DAS) opens for applications today, 3 February.</p>
+									</div>
+								</div>
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">If so the JLD needs your help!</a></h4>
+										<p>JLD statement on proposed new centralised assessment for qualification as a solicitor</p>
+									</div>
+								</div>
+								<div class="col-sm-4 info-item-wrap">
+									<div class="info-item">
+										<h4><a href="#">Needs your help!</a></h4>
+										<p>Junior Lawyer of the Year – winner announced</p>
+									</div>
+								</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="section-bottom">
+			<div class="btn-wrap">
+				<button class="buttons">Order Service</button>
+			</div>
+		</div>
+
+	</section>
+
+
+<!-- Section Four-->
+	<section class="s-home section-four">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>Advantages The Law Society</h2>
+							<p><strong>The Law Society </strong>The future of Britain in Europe- impact on legal services. As the debate on the UK's position in Europe hots up in the media, why not take a look our reports that aim to help our members navigate the impact a possible Brexit could have on the legal services sector.</p>
+							<h3>Latest from the Law Society</h3>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="cards">
+					<div class="card card-on card-off">
+						<div class="card-icon img-wrap">
+							<img src="img/icons/section_4/1.svg" alt="image">
+						</div>
+						<h4>Sales</h4>
+						<p>We provide all our customers with a unique an opportunity to get a discount <span>50%</span> for all services</p>
+					</div>
+
+					<div class="card card-on card-off">
+						<div class="card-icon img-wrap">
+							<img src="img/icons/section_4/2.svg" alt="image">
+						</div>
+						<h4>Team</h4>
+						<p>We have great experience in the largest consulting companies</p>
+					</div>
+
+					<div class="card card-on card-off">
+						<div class="card-icon img-wrap">
+							<img src="img/icons/section_4/3.svg" alt="image">
+						</div>
+						<h4>Speed</h4>
+						<p>Getting execution commitments on the same day our company</p>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div><!--End container-->
+
+			<div class="section-bottom">
+				<div class="btn-wrap">
+					<button class="buttons">Call us</button>
+				</div>
+			</div>
+
+	</section>
+
+<!-- Section five -->
+	<section class="s-home s-dark section-five">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>How we are working</h2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="triangles-container">
+			<div class="container">
+				<div class="row">
+
+					<div class="triangle-item">
+						<div class="triangle-content">
+							<img src="img/icons/section_5/1.svg" alt="img">
+							<span>1.</span> You leave application
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-0">
+							<path id="path4138" d="M 3.4644996,126.28999 3.1137219,4.0613763 l 240.7182181,0 43.11847,58.7692707 -43.28202,63.461773 z" style="fill:#f39f18;fill-opacity:0;stroke-opacity:0;stroke:#f39f18;stroke-width:5px" />
+						</svg>
+					</div>
+
+					<div class="triangle-item">
+						<div class="triangle-content">
+							<img src="img/icons/section_5/2.svg" alt="img">
+							<span>2.</span> You leave application
+						</div>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-1">
+							<path id="path4138-1" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#f39f18;fill-opacity:0;stroke-opacity:0;stroke:#f39f18;stroke-width:5px" />
+						</svg>
+					</div>
+
+					<div class="triangle-item">
+						<div class="triangle-content">
+							<img src="img/icons/section_5/3.svg" alt="img">
+							<span>3.</span> You leave application
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-2">
+							<path id="path4138-2" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#f39f18;fill-opacity:0;stroke-opacity:0;stroke:#f39f18;stroke-width:5px" />
+						</svg>
+					</div>
+
+					<div class="triangle-item">
+						<div class="triangle-content">
+							<img src="img/icons/section_5/4.svg" alt="img">
+							<span>4.</span> You leave application
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg-3">
+							<path id="path4138-3" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#f39f18;fill-opacity:0;stroke-opacity:0;stroke:#f39f18;stroke-width:5px" />
+						</svg>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section-bottom">
+			<div class="btn-wrap">
+				<button class="buttons">Order Service</button>
+			</div>
+		</div>
+	</section>
+
+<!-- Six section-->
+	<section class="s-home section-six">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>Our Team</h2>
+							<p>Please contact one of the staff, and get advice on slave</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="cards">
+					<div class="card-team card-on card-off">
+						<div class="card-icon img-wrap">
+							<img src="img/team/img1.jpg" alt="image">
+						</div>
+						<h4>Mark Luter</h4>
+						<p>Lawyer</p>
+						<span>(800) 1234-777</span>
+					</div>
+
+					<div class="card-team card-on card-off">
+						<div class="card-icon img-wrap">
+							<img src="img/team/img3.jpg" alt="image">
+						</div>
+						<h4>Stanis Robson</h4>
+						<p>Lawyer</p>
+						<span>(800) 1234-777</span>
+					</div>
+
+					<div class="card-team card-on card-off">
+						<div class="card-icon img-wrap">
+							<img src="img/team/img2.jpg" alt="image">
+						</div>
+						<h4>Lola Miloshevich</h4>
+						<p>Manager</p>
+						<span>(800) 1234-777</span>
+					</div>
+
+				</div>
+			</div>
+
+		</div><!--End container-->
+
+	</section>
+
+
+	<!-- Section seven -->
+
+	<section class="s-home s-dark section-seven">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="section-head">
+							<h2>Customer Reviews</h2>
+							<p>Listen to what people say about us grateful clients:</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="slider">
+
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+								<div class="img-wrap">
+									<img src="img/team/img1.jpg" alt="qw">
+								</div>
+								<strong>Dino Semione</strong>
+								<span>Company "Salem"</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi pariatur tempora, vero. Ipsum soluta error tenetur, reiciendis vel deleniti facilis velit est accusantium. Facere ex necessitatibus iure, est ullam repudiandae.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+								<div class="img-wrap">
+									<img src="img/team/img2.jpg" alt="qw">
+								</div>
+								<strong>Dino Semione</strong>
+								<span>Company "Salem"</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi pariatur tempora, vero. Ipsum soluta error tenetur, reiciendis vel deleniti facilis velit est accusantium. Facere ex necessitatibus iure, est ullam repudiandae.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+								<div class="img-wrap">
+									<img src="img/team/img3.jpg" alt="qw">
+								</div>
+								<strong>Dino Semione</strong>
+								<span>Company "Salem"</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi pariatur tempora, vero. Ipsum soluta error tenetur, reiciendis vel deleniti facilis velit est accusantium. Facere ex necessitatibus iure, est ullam repudiandae  Ipsum soluta error tenetur, reiciendis vel deleniti facilis velit est accusantium. Facere ex necessitatibus iure, est ullam repudiandae.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+<!-- Section eight -->
+	<section class="s-home section-eight">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-8">
+					<div class="section-head">
+						<h2>Law careers</h2>
+						<p>Training to become a solicitor demands considerable commitment over a number of years. Do your own research to find out as much as you can about what a career as a solicitor is really like. Talk to people in the profession and try to get some work experience. Make sure you are right for the profession and the profession is right for you.</p>
+					</div>
+
+
+					<div class="row">
+					<div class="s8-items clearfix">
+
+						<div class="s8-item col-sm-3 col-xs-6">
+							<div class="img-wrap">
+								<img src="img/icons/section_8/1.svg" alt="img">
+							</div>
+							<p>Becoming a solicitor (PDF 4.5mb) - handout guide including checklists and tips</p>
+						</div>
+
+						<div class="s8-item col-sm-3 col-xs-6">
+							<div class="img-wrap">
+								<img src="img/icons/section_8/2.svg" alt="img">
+							</div>
+							<p>The role of the Law Society</p>
+						</div>
+
+						<div class="s8-item col-sm-3 col-xs-6">
+							<div class="img-wrap">
+								<img src="img/icons/section_8/3.svg" alt="img">
+							</div>
+							<p>Understanding the realities</p>
+						</div>
+
+						<div class="s8-item col-sm-3 col-xs-6">
+							<div class="img-wrap">
+								<img src="img/icons/section_8/4.svg" alt="img">
+							</div>
+							<p>Informed choices - top universities provide advice to students on A Level choices</p>
+						</div>
+
+					</div>
+					</div>
+
+
+				</div>
+
+
+				<div class="col-md-4">
+						<form class="forms">
+							<h4>Leave Application:</h4>
+							<p>Leave the application and we will contact you
+								for 15 minutes in the working
+								time from 10:00 to 18:00 c Mon-Sat.</p>
+							<label>Your name:</label>
+							<input type="text" name="name" required>
+							<label>Your phone:</label>
+							<input type="text" name="phone" required>
+							<div class="btn-wrap">
+								<button class="buttons form-button">Send</button>
+							</div>
+						</form>
+					</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer class="s-home s-dark">
+		<div class="container">
+				<div class="row">
+					<!-- Logotip -->
+					<div class="col-lg-3 col-md-2 col-sm-6 col-xs-4">
+						<a href="index.html"><img class="logo" src="img/logo.png" alt="logotip"></a>
+					</div>
+
+					<div class="col-lg-2 col-lg-push-7 col-md-9 col-sm-5 col-xs-8">
+						<div class="phone-wrap">
+							<div class="phone">(800) 100-777-99</div>
+						</div>
+					</div>
+
+					<!-- Main menu -->
+					<div class="col-lg-7 col-lg-pull-2">
+						<nav class="top-menu">
+							<ul>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">Practice</a></li>
+								<li><a href="#">Advocacy</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+
+
+
+				</div>
+			</div>
+			<div class="footer-line">
+				<a class="go-top" href="index.html"><img src="img/top.png" alt="top"></a>
+			</div>
+	</footer>
+
+
+
+
+	<div class="hidden"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>

@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
+
+
+
 	$('.popup').magnificPopup({type:'image'});
+	$('.popup-c').magnificPopup();
 
 
 	$.stellar({
@@ -68,7 +72,7 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#form").submit(function(e) {
+	$("form").submit(function(e) {
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -77,9 +81,22 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				$.fancybox.close();
+
 			}, 1000);
 		});
 	});
+
+});
+
+$(window).load(function() {
+
+	$(".top-header h1").animated("fadeInDown", "fadeOut");
+	$(".top-header h2").animated("fadeInUp", "fadeOut");
+
+	$(".tabs-header .wrapper").animated("flipInY", "fadeOut");
+	$(".profile-item").animated("fadeInLeft", "fadeOut");
+	$("form").animated("fadeInRight", "fadeOut");
+	$(".callback h3").animated("fadeInUp", "fadeOut");
+	$("footer").animated("fadeInDown", "fadeOut");
 
 });
