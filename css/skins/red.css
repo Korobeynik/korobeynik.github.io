@@ -1,0 +1,9 @@
+a {
+  color: #ff5048;
+}
+
+p,
+body .main_footer,
+.s_about li {
+  color: #222;
+}

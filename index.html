@@ -1,91 +1,576 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<meta charset="utf-8">
+
+	<title>Yura Korobeynik</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/skins/red.css" />
+	<link rel="stylesheet" href="css/media.css">
+	<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+	<script src="libs/modernizr/modernizr.js"></script>
+
 </head>
+
 <body>
 
-  <div class="email-wrapper">
+<!-- Header -->
+	<header class="header">
+		<div class="header-video-container" id="video-wrap">
+			<video autoplay  poster="img/bg-work.jpg"  loop muted="muted" id="my-video">
+				<source src="video/homevideo.mp4" type="video/mp4">
+				<source src="video/homevideo.webm" type="video/webm">
+				<!--<source src="video/intro-work.mp4.ogv" type="video/ogv">-->
+				 Your browser does not support the video tag. I suggest you upgrade your browser.
+			</video>
+		</div>
 
-    <div class="email-container">
+		<div class="header-title-wrap">
+			<div class="header-title">
+				<h1>Yura Korobeynik</h1>
+				<p>junior front-end web developer</p>
+			</div>
+		</div>
 
-      <div class="email-header ">
-       <div class="img-wrap">
-         <img src="img/i.jpg" alt="Korobeynik_Yura">
-       </div>
-       <h1>Коробейник Юрий</h1><br>
-       <div class="phone">
-        <i class="fa fa-phone-square"></i> <span>+38-093-106-2008</span>
-       </div><br>
-       <div class="mail">
-        <i class="fa fa-envelope"></i><span>korobeynik77@gmail.com</span>
-       </div><br>
-       <div class="map">
-        <i class="fa fa-map-marker"></i><span>Харьков, ул.Ак.Павлова, 134-б</span>
-       </div>
-       <div class="social">
-        <a href="https://vk.com/yura_korobeynik"><i class="fa fa-vk"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100002186946969"><i class="fa fa-facebook-official"></i></a>
-       </div>
-      </div>
-      <div class="email-content">
-       <table>
-         <tr>
-           <td class="title">Образование:</td>
-           <td>Высшее, по образованию я юрист.</td>
-         </tr>
-         <tr>
-           <td class="title">Опыт работы:</td>
-           <td>У меня нет опыта в работе с комерческими проэктами, но я много верстал для себя, ниже Вы можете посмотреть некоторые мои работы.</td>
-         </tr>
-         <tr>
-           <td class="title">Навыки:</td>
-           <td>Я изучаю веб-разработку 9 месяцев, уже имею не плохие знания в <b>HTML & CSS</b>, знания в <b>Javascript</b> на начальном уровне, базовое знание <b>Photoshop</b>, начальный уровень inkscape и illustrator(например могу создать икон.шрифт, изображения из раст. в вектор и тд.)<b>Английский</b> Pre - Intermediate.Так же знаю и использую в своих проэктах: <b>Git, Bootstrap, Sass и Bourbon, Gulp, Bower.</b></td>
-         </tr>
-         <tr>
-           <td class="title">Коротно о себе:</td>
-           <td>Есть большое желание развиваться и расти в сторону frond-end, постоянно совершенствовать свои навыки. Сейчас для меня главное получение нового практического опыта в комерческих проэктах, и работа с настоящими професионалами. Также я довольно бысто изучаю новою информацию.</td>
-         </tr>
-       </table>
-      </div>
-      <div class="email-portfolio">
-        <div class="portfolio-item">
-          <a href="Law/index.html" target="_blank">
-            <img src="img/items/law.jpg" alt="law">
-            <button class="button">Просмотр</button>
-          </a>
+		<div class="btn-wrap" id="btn-scroll">
+			<button class="btn-scroll">Get Started</button>
+		</div>
+	</header>
 
-        </div>
-        <div class="portfolio-item">
-          <a href="ProEng/index.html" target="_blank">
-            <img src="img/items/pro.jpg" alt="ProEnglish">
-            <button class="button">Просмотр</button>
-          </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="Travelo/index.html" target="_blank">
-            <img src="img/items/travelo.jpg" alt="Travelo">
-            <button class="button">Просмотр</button>
-          </a>
-        </div>
-        <div class="portfolio-item">
-          <a href="Muzik/index.html" target="_blank">
-            <img src="img/items/muzik.jpg" alt="MuzikShop">
-            <button class="button">Просмотр</button>
-          </a>
-        </div>
-      </div>
+	<!-- Logo -->
+		<div class="logo-container">
+			<a href="index.html"><img src="img/logo5.png" class="logo" alt="Korobeynik.logo"></a>
+		</div>
 
-    </div>
+	<!-- Navigation -->
+		<div class="menu-container">
+			<div class="button_container" id="toggle">
+				<div class="btn_wrap">
+					<span class="top"></span>
+					<span class="middle"></span>
+					<span class="bottom"></span>
+				</div>
+			</div>
 
-  </div>
+			<div class="overlay" id="overlay">
+				<nav class="overlay-menu">
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	<!-- End Navigation -->
 
 
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="section-header">
+					<h2>About Me</h2>
+				</div>
+
+					<div class="col-md-4 col-md-push-7">
+						<div class="foto-wrap">
+							<div class="foto">
+								<a href="img/foto.jpg" class="popup"><img src="img/foto.jpg" alt="foto"></a>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-7 col-md-offset-1 col-md-pull-4">
+						<div class="about-item">
+							<div class="description">
+								<h3>Helo, nice to meet you.</h3>
+								<p> My name is Yura Korobeynik. I like to create amazing websites with great interest the development of Web technology, so I have a great desire to work. Then you can see my work. The few projects I worked on as a "student".
+								</p>
+							</div>
+							<div class="button-wrap">
+							<a href="img/Resume.docx" class="button-download" >Download my resume.</a>
+							</div>
+							<div class="hobby">
+								<h4>My intresting</h4>
+								<ul>
+									<li><img src="img/hobbies/book.svg" alt="hobby">Reading</li>
+									<li><img src="img/hobbies/football.svg" alt="hobby">Playing</li>
+									<li><img src="img/hobbies/joystick.svg" alt="hobby">Videogames</li>
+									<li><img src="img/hobbies/backpack.svg" alt="hobby">Travel as I can</li>
+									<li><img src="img/hobbies/weight-bench.svg" alt="hobby">Traning</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Section Skills -->
+	<section class="services" id="skills">
+		<div class="section-header">
+			<h2>Skills <span>-</span> Services</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3 col-sm-6 col-xs-12"><!-- First item -->
+					<div class="services-item item-first">
+						<div class="icon-wrap">
+							<div class="icon-front">
+								<img src="img/icon-white/programming.svg" alt="prog">
+							</div>
+							<div class="icon-back ">
+								<img src="img/icon-red/programming.svg" alt="prog">
+							</div>
+						</div>
+						<h4>HTML 5 & CSS3</h4>
+						<p>Good knowledge of HTML 5, CSS 3, semantically, is valid layout. Block, the table if necessary (eg, for the layout of e-mails).</p>
+						<ul>
+							<li>Cross-browser compatibility</li>
+							<li>Graceful Degradation.</li>
+							<li>Preprocessor Sass.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12"><!-- Two item -->
+					<div class="services-item item-second">
+						<div class="icon-wrap">
+							<div class="icon-front">
+								<img src="img/icon-white/responsive-design-symbol.svg" alt="prog">
+							</div>
+							<div class="icon-back ">
+								<img src="img/icon-red/responsive-design-symbol.svg" alt="prog">
+							</div>
+						</div>
+						<h4>Responsiv</h4>
+						<p>I have experience in adaptive layout for various devices such as using frameworks (Bootstrap) and without them. Cross-browser compatibility.</p>
+						<ul>
+							<li>Bootstrap</li>
+							<li>CSS Media Queries.</li>
+							<li>Mobile First.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12"><!-- Three item -->
+					<div class="services-item item-third">
+						<div class="icon-wrap">
+							<div class="icon-front">
+								<img src="img/icon-white/ux-design.svg" alt="prog">
+							</div>
+							<div class="icon-back ">
+								<img src="img/icon-red/ux-design.svg" alt="prog">
+							</div>
+						</div>
+						<h4>JS & jQuery</h4>
+						<p>At the moment I am using ready-made solution, and continue to actively explore. (For the most part use and configure various jQuery plugins, modal windows, carousel, slider, etc.)</p>
+						<ul>
+							<li>Gulp.</li>
+							<li>Bower.</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-12"><!-- Four item -->
+					<div class="services-item item-fouth">
+						<div class="icon-wrap">
+							<div class="icon-front">
+								<img src="img/icon-white/web-development.svg" alt="prog">
+							</div>
+							<div class="icon-back ">
+								<img src="img/icon-red/web-development.svg" alt="prog">
+							</div>
+						</div>
+						<h4>Git/Photoshop</h4>
+						<p>I have a little experience with GIT. Adobe Photoshop on the cutting layout level, Adobe illustrator and Inkscape (basic level)</p>
+						<ul>
+							<li>SVG.</li>
+							<li>Greate icon font.</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Work Section-->
+	<section class="section-work" id="work">
+		 <div class="video-container">
+				<video autoplay  poster="img/bg-work.jpg" loop muted="muted">
+					<source src="video/nav-careers.mp4" type="video/mp4">
+					<source src="video/nav-careers.webm" type="video/webm">
+					<source src="video/bedRoomHD.ogv" type="video/ogv">
+						 Your browser does not support the video tag. I suggest you upgrade your browser.
+				</video>
+					<h2 class="work-header">My Work</h2>
+					<h3 class="work-header-descr">My Few Pojects</h3>
+					<p class="descr">Here are the few projects I worked on as a "student".
+						I consider a lot of them to be quite obsolete but they individually represent something I really loved to work on or something which was really useful in my learning process.</p>
+			</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section class="portfolio">
+		<div class="container">
+			<div class="row">
+
+				<div class="filter_div controls">
+					<ul class="sorting">
+						<li class="filter active" data-filter="all">All</li>
+						<li class="filter" data-filter=".category-1">Last</li>
+						<li class="filter" data-filter=".category-2">Popular</li>
+						<li class="filter" data-filter=".category-3">Mobile</li>
+					</ul>
+				</div>
+
+				<div id="portfolio-grid">
+
+					<div id="da-thumbs" class="da-thumbs">
+						<div class="mix col-md-4  col-sm-6 col-xs-12 portfolio-item category-1">
+							<a href="#work-yoga" class="popup-content">
+								<img src="img/work/yoga-sm.jpg" alt="yoga" />
+								<div class="item-hover">
+									<span>Dharma Yoga</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-yoga">
+									<img src="img/work/yoga.jpg" alt="Yoga">
+									<h3>Dharma Yoga</h3>
+									<p>A clean HTML responsive layout without the use of frameworks. Responsiv navigation menu, image slider.</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/Yoga/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-1">
+							<a href="#work-law" class="popup-content">
+								<img src="img/work/law-sm.jpg" alt="law" />
+								<div class="item-hover">
+									<span>The Law Society</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-law">
+									<img src="img/work/law.jpg" alt="Law">
+									<h3>The Law Society</h3>
+									<p>HTML 5, Adaptive layout. In this project I have used Sass, Bourbon, Bootstrap, Waypoints, Owl Carousel, Equal Heights, MagnificPopup, Animate CSS, Draw SVG.</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/The Law/app/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-1">
+							<a href="#work-gym" class="popup-content">
+								<img src="img/work/gym-sm.jpg" alt="gym" />
+								<div class="item-hover">
+									<span>The Gym</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-gym">
+									<img src="img/work/gym.jpg" alt="Gym">
+									<h3>The Gym</h3>
+									<p>A clean HTML responsive layout without the use of frameworks. Responsiv navigation menu, image slider.</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/Gym/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-2">
+							<a href="#work-tours" class="popup-content">
+								<img src="img/work/tours-work-sm.jpg" alt="tours" />
+								<div class="item-hover">
+									<span>Tours to Malaysia</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-tours">
+									<img src="img/work/tours-work.jpg" alt="Tours">
+									<h3>Tours to Malaysia</h3>
+									<p>Adaptive(bootstrap)
+										The ability to change the text content to maintain the same height of the blocks.
+										A visual effect when you move and when you click on the button.
+										Modal window by clicking on the Book It button.
+										Validation of the field name, excluding invalid data entry.
+										Preformatted telephone with automatic splitting into code and ranks number.</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/frontend_test/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-2">
+							<a href="#work-travelo" class="popup-content">
+								<img src="img/work/travelo-sm.jpg" alt="travelo" />
+								<div class="item-hover">
+									<span>The Travelo</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-travelo">
+									<img src="img/work/travelo.jpg" alt="Travelo">
+									<h3>The Travelo</h3>
+									<p>Adaptive layout. In this project I have used Sass, Bourbon, Bootstrap, Waypoints, Owl Carousel, Equal Heights, MagnificPopup, Animate CSS, Animate Number.</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/Travelo/app/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-2">
+							<a href="#work-english" class="popup-content">
+								<img src="img/work/english-sm.jpg" alt="english" />
+								<div class="item-hover">
+									<span>English landing page</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-english">
+									<img src="img/work/english.jpg" alt="English">
+									<h3>The English School</h3>
+									<p>The English School Adaptive landing page. In this project I have used Sass, Bourbon, Bootstrap, Waypoints, Owl Carousel, Equal Heights, MagnificPopup, Animate CSS, Created icon font (inkscape).</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/Landing Page/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-3">
+							<a href="#work-music" class="popup-content">
+								<img src="img/work/muzik-sm.jpg" alt="music" />
+								<div class="item-hover">
+									<span>The music shop</span><span class="review">Review</span>
+								</div>
+							</a>
+							<div class="hidden">
+								<div class="item-descr mfp-fade" id="work-music">
+									<img src="img/work/muzik.jpg" alt="Music">
+									<h3>The Music Shop</h3>
+									<p>Not adaptive template, one of my first jobs. In this project I have used 'range'plugin and 'scroll to the top' jQuery plugin</p>
+									<div class="visit-btn-wrap">
+										<a href="projects/Muzik Shop/index.html" class="visit"  target="_blank">Visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-3">
+							<a href="#" class="popup-content">
+								<img src="img/work/yoga-sm.jpg" alt="img" />
+								<div class="item-hover">
+									<span>Soon</span><span class="review">Review</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="mix col-md-4 col-sm-6 col-xs-12 portfolio-item category-3">
+							<a href="#" class="popup-content">
+								<img src="img/work/yoga-sm.jpg" alt="img" />
+								<div class="item-hover">
+									<span>Soon</span><span class="review">Review</span>
+								</div>
+							</a>
+						</div>
+					</div>
 
 
+				</div>
+
+
+			</div><!-- End row -->
+		</div>
+	</section>
+
+
+	<!-- Section Contact -->
+
+	<section id="contact" class="contact">
+		<div class="section-header">
+			<h2>Let’s work together</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+
+			<form action="https://formspree.io/korobeynik77@mail.com" target="_blank"  method="POST">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span class="input input--kozakura">
+						<input class="input__field input__field--kozakura" type="text" id="input-7" pattern="[A-Za-zА-Яа-яЁё]{1,20}$" name="name" required />
+						<label class="input__label input__label--kozakura form-group" for="input-7">
+							<span class="input__label-content input__label-content--kozakura" data-content="Name">Name</span>
+						</label>
+						<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
+						</svg>
+					</span>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span class="input input--kozakura">
+						<input class="input__field input__field--kozakura" type="text" id="input-8" name="email" data-validation-email-message="Type your e-mail please" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+						<label class="input__label input__label--kozakura" for="input-8">
+						<span class="help-block"></span>
+							<span class="input__label-content input__label-content--kozakura" data-content="Email">Email</span>
+						</label>
+						<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
+						</svg>
+					</span>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span class="input input--kozakura">
+						<input class="input__field input__field--kozakura" type="text" id="input-9" name="subject"/>
+						<span class="help-block"></span>
+						<label class="input__label input__label--kozakura" for="input-9">
+							<span class="input__label-content input__label-content--kozakura" data-content="Subject">Subject</span>
+						</label>
+						<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
+						</svg>
+					</span>
+				</div>
+
+				<div class="col-lg-12 col-md-12">
+					<textarea class="textarea" placeholder="Type your message here..." cols="30" required></textarea>
+				</div>
+				<div class="col-md-12">
+					<div class="button-send-wrap">
+						<input type="submit" value="" class="send-button"/>
+					</div>
+				</div>
+			</form>
+
+			</div>
+		</div>
+	</section>
+
+<footer class="footer">
+	<p>You can stalk me here :</p>
+	<ul class="social">
+		<li><a href="https://www.facebook.com/profile.php?id=100002186946969" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+		<li><a href="https://vk.com/yura_korobeynik" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+		<li><a href="https://github.com/Korobeynik" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+	</ul>
+	<p class="copyright">© Copyright 2016 • Yura Korobeynik</p>
+</footer>
+
+
+
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/parallax/parallax.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/mixitup/mixitup.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/bg-video/backgroundVideo.min.js"></script>
+	<script src="js/jquery.hoverdir.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script>
+		$(document).ready(function() {
+				$('#my-video').backgroundVideo({
+						pauseVideoOnViewLoss: false,
+						parallaxOptions: {
+								effect: 1.9
+						}
+				});
+		});
+	</script>
+	<script src="js/classie.js"></script>
+	<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+		<script>
+			$(function() {
+        $(' #da-thumbs > .portfolio-item ').each( function() { $(this).hoverdir(); } );
+			});
+		</script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>

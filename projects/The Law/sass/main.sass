@@ -1,0 +1,613 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+
+//Custom Styles Here
+.s-home
+	padding-top: 70px
+	background-color: #f9f9f9
+	position: relative
+	&::before
+		content: ""
+		height: 6px
+		width: 100%
+		position: absolute
+		top: -6px
+		background-image: url(../img/bah_1.png)
+		background-repeat: repeat-x
+		z-index: 2
+
+	h2
+		text-align: center
+		line-height: em(36px)
+		position: relative
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			height: 4px
+			width: 166px
+			background-color: $accent
+			bottom: -15px
+			left: 50%
+			transform: translate(-50%, 0)
+	.section-head
+		p
+			padding: 20px 0 50px 0
+			line-height: 22px
+			font-size: em(15px)
+			animation-delay: .4s
+
+	.section-bottom
+		background-color: $dark-color
+		padding: 60px 0
+
+
+.section-one
+	.section-content-wrap
+		position: relative
+		.section-content
+			background-image: url(../img/s1_gray_bg.png)
+			background-repeat: no-repeat
+			background-position: 50% 100%
+			position: relative
+			padding-bottom: 90px
+		.info-item
+			padding-left: 40px
+			max-width: 300px
+			margin: 70px 0
+			p
+				font-family: "RalewayRegular", sans-serif
+				font-size: em(15px)
+				line-height: em(20px)
+
+.info-item-wrap:nth-child(2)
+	.info-item
+		margin-top: 0
+
+
+.section-triangle-bg
+	text-align: center
+	height: 100px
+	position: absolute
+	width: 100%
+	bottom: 0
+	background-image: url(../img/s1_triangle.svg)
+	background-position: top center
+	background-size: 100% 100%
+	.triangle-logo
+		width: 250px
+		margin-top: 25px
+		padding-bottom: 20px
+		position: absolute
+		left: 50%
+		transform: translate(-50%, 0)
+	.femida-img
+		width: 190px
+		position: relative
+		top: -257px
+		left: 7px
+
+.section-content-bottom
+	padding: 15px 0 50px 0
+	background-color: #5a2917
+	color: #fff
+	.info-item
+		padding-left: 40px
+		max-width: 300px
+		margin: 0px 0
+		p
+			font-family: "RalewayRegular", sans-serif
+			font-size: em(15px)
+			line-height: em(20px)
+
+.section-content-bottom
+	.info-item-wrap:nth-child(2)
+		.info-item
+			margin-top: 70px
+
+//Section two, items
+.section-two
+	.section-head
+		p
+			padding-bottom: 20px
+			text-align: center
+		h3
+			text-align: center
+			margin: 30px 0 65px 0
+	.section-bottom
+		background-color: #e5e5e5
+
+.section-wrap
+	padding-bottom: 50px
+	.section-two-item
+		text-align: center
+		text-decoration: none
+		color: #000
+		margin-bottom: 70px
+		display: block
+		opacity: 0
+		+mt(.5s)
+		transform: translateY(-25px)
+		&.on
+			opacity: 1
+			transform: translateY(0)
+			&:hover
+				transform: translateY(-25px)
+		&:hover
+			text-decoration: underline
+		p
+			font-family: "RalewayBold", sans-serif
+			font-size: em(14px)
+			line-height: 16px
+			color: #000
+		.img-wrap
+			width: 100%
+			height: 85px
+			display: inline-block
+			margin-bottom: 32px
+			position: relative
+			&::after
+				content: ""
+				display: block
+				position: absolute
+				bottom: -24px
+				left: 50%
+				width: 60px
+				height: 1px
+				background-color: $accent
+				transform: translate(-50%, 0)
+			img
+				max-height: 80px
+				max-width: 85px
+
+.section-three
+	@extend .section-one
+	.section-content-wrap
+		.section-content
+			min-height: 850px
+			padding-top: 30px
+			padding-bottom: 0
+			background-image: url("../img/s3_sun_bg2.png")
+			.info-item
+				margin: 20px 0
+				margin-top: 84px
+	.info-item-wrap
+		&:nth-child(2)
+			.info-item
+				margin-top: 30px
+		&:nth-child(7), &:nth-child(9)
+			.info-item
+				margin-top: 30px
+		&:nth-child(1), &:nth-child(3)
+			.info-item
+				margin-top: 90px
+		&:nth-child(8)
+			.info-item
+				margin-top: 150px
+		&:nth-child(1), &:nth-child(7)
+			.info-item
+				margin-left: 70px
+		&:nth-child(3), &:nth-child(9)
+			.info-item
+				margin-left: -40px
+		&:nth-child(5)
+			.info-item
+				width: 133px
+				height: 133px
+				margin-left: 72px
+				padding: 0
+
+.s-three-img-wrapp
+	width: 133px
+	height: 133px
+	border-radius: 50%
+	background-color: $accent
+	text-align: center
+	margin-left: 75px
+	img
+		display: inline-block
+		width: 75px
+		margin-top: 25px
+
+
+
+
+.s-dark
+	padding-top: 70px
+	background-color: $dark-color
+	position: relative
+	&::before
+		content: ""
+		height: 6px
+		width: 100%
+		position: absolute
+		top: -6px
+		background-image: url(../img/bah_2.png)
+		background-repeat: repeat-x
+		z-index: 2
+	p
+		color: #e5e5e5
+	.section-head
+		h2
+			color: #fff
+		p
+			color: #e5e5e5
+			text-align: center
+	.section-bottom
+		background-color: #5a2917
+		margin-top: 60px
+
+//Section four
+.section-four
+	.section-head
+		p
+			text-align: center
+			margin-bottom: 0
+		h3
+			text-align: center
+			margin-bottom: 50px
+			margin-top: 0
+	.section-bottom
+		background-color: #e5e5e5
+		margin-top: 30px
+
+.cards
+	text-align: center
+	perspective: 600px
+	.card
+		&-on
+			opacity: 1
+		&-off
+			transform: rotateY(-180deg)
+			opacity: 0
+		transition: all 1.5s ease
+		width: 260px
+		display: inline-block
+		background-color: $dark-color
+		color: #97a4b2
+		margin: 0 14px
+		font-size: em(15px)
+		line-height: em(20px)
+		padding: 54px 30px 50px
+		vertical-align: top
+		margin-bottom: 30px
+		opacity: 1
+		box-shadow: 0 2px 4px  #999
+		h4
+			font-family: "RalewayBold", sans-serif
+			font-size: em(22px)
+			line-height: 34px
+			text-transform: uppercase
+			margin-top: 20px
+			color: #fff
+		p
+			span
+				color: $accent
+		.card-icon
+			width: 120px
+			height: 120px
+			background-color: $accent
+			border-radius: 10em
+			display: inline-block
+			line-height: 120px
+			img
+				width: 75px
+				display: inline-block
+
+//Section five
+
+.triangles-container
+	color: #fff
+	font-family: "PFCentroSlabProMedium", sans-serif
+	font-size: em(17px)
+	margin: 60px 0
+	text-align: center
+	.triangle-item
+		width: 290px
+		height: 128px
+		display: inline-block
+		position: relative
+		margin-left: -40px
+		vertical-align: top
+		+mt(.5s)
+		&:first-child
+			margin-left: 0
+			.triangle-content
+				margin-left: 40px
+		&:hover
+			transform: scale(1.08)
+			z-index: 3
+			path
+				fill-opacity: 0 !important
+				stroke-opacity: 1 !important
+		svg
+			position: absolute
+			top: 0
+			left: 0
+		.triangle-content
+			position: relative
+			z-index: 1
+			margin-top: 38px
+			margin-left: 55px
+			text-align: left
+			padding-right: 20px
+			span
+				font-size: em(22px)
+			img
+				height: 45px
+				float: left
+				margin-right: 20px
+
+//Section six
+
+.section-six
+	.section-head
+		p
+			text-align: center
+	.cards
+		text-align: center
+		perspective: 600px
+		margin-bottom: 30px
+		.card-team
+			&-on
+				opacity: 1
+			&-off
+				transform: rotateY(-180deg)
+				opacity: 0
+			transition: all 1.5s ease
+			width: 260px
+			display: inline-block
+			background-color: $gray
+			color: #97a4b2
+			margin: 0 14px
+			font-size: em(15px)
+			line-height: em(20px)
+			padding: 54px 30px 50px
+			vertical-align: top
+			margin-bottom: 30px
+			box-shadow: 0 3px 4px #999
+			+mt(.5s)
+			&:hover
+				transform: scale(1.1)
+				background-color: $accent
+			h4
+				font-family: "RalewayBold", sans-serif
+				font-size: em(17px)
+				line-height: 34px
+				text-transform: none
+				margin-top: 20px
+				color: #333333
+			span
+				font-family: "RobotoBold", sans-serif
+				font-size: em(18px)
+				color: #333
+			p
+				margin-top: 0
+				margin-bottom: 20px
+				color: #6e7b8b
+			.card-icon
+				width: 125px
+				height: 125px
+				background-color: $accent
+				border-radius: 10em
+				display: inline-block
+				line-height: 120px
+				border: 5px solid #d6d6d6
+				overflow: hidden
+				img
+					width: 100%
+					display: block
+
+//Section seven
+.section-seven
+	.slider
+		padding-bottom: 120px
+		position: relative
+		.slide
+			text-align: center
+			font-size: em(16px)
+			color: #fff
+		.owl-item
+			.img-wrap
+				opacity: 0
+				+mt(1s)
+				transform: translate3d(200px, 0 , 0)
+				transition-delay: .2s
+			strong,p,span
+				opacity: 0
+				+mt(1s)
+				transform: translate3d(200px, 0 , 0)
+				transition-delay: .4s
+			&.active
+				.img-wrap
+					opacity: 1
+					transform: translate3d(0, 0 , 0)
+				strong,p,span
+					opacity: 1
+					transform: translate3d(0, 0 , 0)
+
+			span
+				color: #6e7b8b
+				font-size: em(13px)
+				font-family: "RalewayRegular", sans-serif
+				display: block
+			strong
+				font-size: em(22px)
+				color: #fff
+				display: block
+				padding: 10px 0
+			.img-wrap
+				width: 135px
+				height: 135px
+				border-radius: 10em
+				display: inline-block
+				border: 5px solid $accent
+				overflow: hidden
+				img
+					width: 100%
+					display: inline-block
+
+.owl-controls
+	.owl-prev
+		background-image: url("../img/slider_arrows.png")
+		width: 16px
+		height: 29px
+		position: absolute
+		top: 100px
+		left: 10%
+	.owl-next
+		background-image: url("../img/slider_arrows-next.png")
+		width: 16px
+		height: 29px
+		position: absolute
+		right: 10%
+		top: 100px
+	.owl-next:active, .owl-prev:active
+		transform: translateY(2px)
+		opacity: .8
+	.owl-dots
+		text-align: center
+		.owl-dot
+			width: 14px
+			height: 14px
+			background-color: #FFF
+			display: inline-block
+			margin: 0 3px 0 3px
+			border-radius: 10em
+			&.active
+				background-color: $accent
+
+
+//Section 8
+.section-eight
+	padding-bottom: 70px
+	.section-head
+		text-align: left
+		h2
+			text-align: left
+			&:after
+				left: 11%
+		p
+			padding-bottom: 30px
+	.forms
+		background-color: $dark-color
+		margin-top: 25px
+	.s8-items
+		.s8-item
+			text-align: center
+			margin-bottom: 20px
+			.img-wrap
+				text-align: center
+				img
+					width: 70px
+					height: 72px
+		p
+			font-family: "RalewayBold", sans-serif
+			font-size: em(13px)
+
+footer
+	.hidden-menu-bottom
+		position: relative
+		bottom: 0
+	.top-menu
+		a
+			text-transform: none
+			&:hover
+				color: $accent
+				text-decoration: underline
+	.footer-line
+		margin-top: 50px
+		height: 35px
+		width: 100%
+		text-align: center
+		background-color: $dark-lite
+		a
+			width: 20px
+			height: 35px
+			display: inline-block
+			opacity: 0.7
+			+mt(.25s)
+			&:hover
+				opacity: 1
+			img
+				display: inline-block
+				width: 10px
+
+#call
+	max-width: 300px
+	margin: 0 auto
+	position: relative
+	opacity: 1
+
+
+
+.mfp-forms
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.15s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.15s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
+
+
+.mfp-close-btn-in
+	.mfp-close
+		color: #fff !important
+/* overlay animate in
+
+/* overlay animate out
+
+/* content at start
+
+/* content animate it
+
+/* content animate out
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media"
+
+//Load Libs SASS
+@import app/libs/owl/assets/owl.carousel.sass
+@import app/libs/Magnific-Popup/magnific-popup.sass
+@import app/libs/animate/animate.sass
