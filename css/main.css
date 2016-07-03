@@ -707,6 +707,8 @@ video {
 }
 
 .services-item .icon-wrap .icon-front {
+  -webkit-backface-visibility: visibility;
+          backface-visibility: visibility;
   background-color: #e52a35;
 }
 
@@ -741,18 +743,18 @@ video {
 }
 
 .item-second {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .item-third {
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .item-fouth {
-  -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 /*------------- Section Work. -------------------*/
