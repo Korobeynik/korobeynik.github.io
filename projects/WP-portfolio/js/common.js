@@ -15,7 +15,7 @@ $(document).ready(function() {
     threshold: 1000
 	});
 
-	$("gallery").css("min-height", $(document).height()*2);
+	$(".gallery").css("min-height", $(document).height()*1.1);
 
 	$(".gallery a").hover(function() {
 		$(".gallery a").css("opacity" , ".7");
