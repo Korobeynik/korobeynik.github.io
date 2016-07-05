@@ -10,10 +10,6 @@ $(document).ready(function() {
 		horizrailenabled: false
 	});
 
-	$(".gallery img").lazyload({
-    effect : "fadeIn",
-    threshold: 1000
-	});
 
 	$("gallery").css("min-height", $(document).height()*2);
 
