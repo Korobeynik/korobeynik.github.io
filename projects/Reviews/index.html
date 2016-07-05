@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Тест</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="about">
+			<h2>Вероника Ростова</h2>
+			<p>Менеджер по продажам</p>
+		</div>
+		<div class="description">
+			<img class="foto" src="img/foto.png" alt="Вероника Ростова">
+			<p>Подберу для вас самые лучшие предложения.
+				Мои услуги абсолютно бесплатны</p>
+		</div>
+
+		<div class="main-data">
+			<p class="service">Услуги</p>
+			<div class="main-data-table">
+				<div class="book">
+					<span></span>
+					<p>Ручное бронирование</p>
+					<p class="number">11</p>
+				</div>
+				<div class="tour">
+					<span></span>
+					<p>Пакетные туры</p>
+					<p class="number">3</p>
+				</div>
+				<div class="hotel">
+					<span></span>
+					<p>Отели</p>
+					<p class="number">1</p>
+				</div>
+			</div>
+			<div class="total"><p>Всего</p> <p class="number">15</p></div>
+		</div>
+
+		<div class="reviews">
+			<p>Последние отзывы</p>
+			<a href="#">Все отзывы</a>
+
+				<p class="icon">
+					<span>131</span>
+					<span>14</span>
+				</p>
+
+		</div>
+	</div>
+
+	<div class="wrapper-bottom">
+		<div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
+
+		<!-- Comments List -->
+		<div class="comments">
+			<!-- Comment -->
+			<div class="comment" ng-repeat="comment in cmntCtrl.comments | orderBy: '-date'">
+
+				<!-- Comment Box -->
+					<div class="comment-footer">
+						<div class="comment-info">
+							<span class="comment-author">
+								<em ng-if="comment.anonymous">Anonymous</em>
+								<a ng-if="!comment.anonymous" href="{{ comment.author }}">{{ comment.author }}</a>
+							</span>
+							<span class="comment-date">{{ comment.date | date: 'medium' }}</span>
+						</div>
+
+					</div>
+				<div class="comment-box">
+					<div class="comment-text">{{ comment.text }}</div>
+				</div>
+			</div>
+
+			<!-- Comment - Dummy -->
+			<div class="comment">
+
+				<!-- Comment Box -->
+				<div class="comment-footer">
+						<div class="comment-info">
+							<span class="comment-author">
+								<a href="#">Самуил</a>
+							</span>
+							<span class="comment-date">Feb 2, 2013 11:32:04 PM</span>
+						</div>
+				</div>
+				<div class="comment-box">
+					<div class="comment-text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!! </div>
+				</div>
+			</div>
+
+			<!-- Comment - Dummy -->
+			<div class="comment">
+
+				<!-- Comment Box -->
+				<div class="comment-footer">
+						<div class="comment-info">
+							<span class="comment-author">
+								<a href="#">Лидия Семеновна</a>
+							</span>
+							<span class="comment-date">Feb 2, 2013 11:32:04 PM</span>
+						</div>
+				</div>
+				<div class="comment-box">
+					<div class="comment-text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</div>
+
+				</div>
+			</div>
+
+			<!-- Comment - Dummy -->
+			<div class="comment">
+
+				<!-- Comment Box -->
+					<div class="comment-footer">
+						<div class="comment-info">
+							<span class="comment-author">
+								<a href="#">Лидия Семеновна</a>
+							</span>
+							<span class="comment-date">Jan 31, 1986 11:32:04 PM</span>
+						</div>
+					</div>
+				<div class="comment-box">
+					<div class="comment-text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- From -->
+		<div class="footer">
+			<div class="content">
+				<div class="comment-form">
+					<form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
+						<div class="form-row">
+							<textarea
+												class="input"
+												ng-model="cmntCtrl.comment.text"
+												required></textarea>
+						</div>
+						<div class="form-row">
+							<input type="submit" value="Написать консультанту">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>
