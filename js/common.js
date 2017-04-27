@@ -1,121 +1,105 @@
 $(function() {
 
-
-
-  $(".overlay-menu li a").mPageScroll2id();
-
-	$('#toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
-  });
-
-  $('.overlay-menu li a').click(function() {
-   $('#overlay').toggleClass('open');
-   $('#toggle').toggleClass('active');
-  });
-
-  //Анимация
-
-  $("h1").animated("fadeInDown", "fadeOutDown");
-  $(".header-title p").animated("fadeInDown", "fadeOutDown");
-  $(".btn-wrap").animated("fadeInUp", "fadeOutDown");
-  $(".section-header,.work-header").animated("fadeInUp", "fadeOutDown");
-  $(".services-item").animated("fadeInUp", "fadeOutDown");
-
-  $(".foto-wrap").animated("zoomIn", "fadeOutDown");
-  $(".description, button-download").animated("fadeInLeft", "fadeOutLeft");
-  $(".foto-wrap .foto").animated("fadeInRight", "fadeOutRight");
-  $(".hobby").animated("fadeInUp", "fadeOutDown");
-  $(".work-header-descr, .descr").animated("fadeInLeft", "fadeOutLeft");
-  $(".input").animated("fadeInLeft", "fadeOutLeft");
-  $(".textarea").animated("fadeInUp", "fadeOutDown");
-
-  $(".item-descr").animated("zoomIn", "fadeOutDown");
-
-//Portfolio sorting
-
-$('#portfolio-grid').mixItUp();
-
-$(".portfolio li").click(function() {
-  $(".portfolio li").removeClass("active");
-  $(this).addClass("active");
-});
-
-
-
-//Popup window
-
-  $(".popup").magnificPopup({type:"image"});
-  $(".popup-content").magnificPopup({type:"inline", midClick: true});
-
-
-
-//Анимация-поворот для карточек
-	$(".services").waypoint(function() {
-
-		$(".services .services-item").each(function(index){
-			var ths = $(this);
-			setInterval(function(){
-				ths.removeClass("icon-on").addClass("icon-off");
-			}, 100*index);
-
-		});
-	}, {
-		offset : "15%"
+	$(".ninja-btn").click( function() {
+	  $(this).toggleClass("active");
+	  $(".mobile-menu").slideToggle();
 	});
 
-//Scroll arrow
-   $("#btn-scroll").click(function(){
-   		$("html, body").animate({ scrollTop: $(".header").height() + 50 }, "slow");
-   });
 
+	var headerH = $("#js-header").height(),
+				navH = $("#js-nav-container").innerHeight();
 
+		$(document).on("scroll", function() {
 
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
+				var documentScroll = $(this).scrollTop();
+
+				if(documentScroll > headerH) {
+						$("#js-nav-container").addClass("fixed");
+
+						$("#js-header").css({
+								"paddingTop": navH
+						});
+				} else {
+						$("#js-nav-container").removeClass("fixed");
+						$("#js-header").removeAttr("style");
+				}
+
+		});
+
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 100){
+			$('.top-line').addClass("fixed");
+			$('header').addClass("top");
+			}
+			else{
+			$('.top-line').removeClass("fixed");
+			$('header').removeClass("top");
+			}
+		});
+
+	 function scrollAnimate(){
+		$('.main-nav ul a, .mobile-menu a').click(function(){
+			elementClick = $(this).attr("href");
+			destination = $(elementClick).offset().top;
+			$('html:not(:animated),body:not(:animated)').animate({
+				scrollTop: destination - 5
+			}, 800, "swing");
+			return false;
 		});
 	};
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
+	 scrollAnimate();
+
+
+
+	$(".slider").owlCarousel({
+		loop:true,
+		nav:true,
+		navText : ['<i class="fa fa-angle-left"></i>' , '<i class="fa fa-angle-right"></i>'],
+		smartSpeed: 700,
+		items:1,
+		nav:true,
+		responsiveClass: true	
 	});
 
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
 
-	};
+	$(".buy-btn").hover( function(){
+		$(this).closest('.tarif-plan').find('.tarif-name').addClass('active');
+	}, function() {
+		$(this).closest('.tarif-plan').find('.tarif-name').removeClass('active');
+		console.log("hover-off");
+	})
 
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+	$('#form').validate({
+	 rules: {
+		 email: {
+				required: true,
+				email: true
+		 },
+		 name: {
+				required: true,
+				name: true
+		 },
+		 password: {
+				required: true,
+				rangelength:[8,16]
+		 },
+		 confirm_password: {equalTo:'#password'},
+		 spam: "required"
+	 }, //end rules
+	 messages: {
+			email: {
+				 required: "Fill in the field",
+				 email: "This is an incorrect email address."
+			 },
 
-  $("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+			 name: {
+				 required: "Fill in the field"
+			 },
+
+	 }
+
+
+	}); // end validate 
+
 });
-
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
-});
-
-
