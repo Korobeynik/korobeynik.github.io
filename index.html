@@ -1,337 +1,897 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang=""> <!--<![endif]-->
+<html lang="ru">
 
 <head>
 
 	<meta charset="utf-8">
 
-	<title>POZNAN</title>
+	<title>Alcoguide</title>
 	<meta name="description" content="">
 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
-
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
-
-	<script src="libs/modernizr/modernizr.js"></script>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
-<body>
+<body class="home">
 
-	<div class="wrapper">
+	<header class="header">
+		<div class="container">
+		
+			<div class="row">
 
-		<header class="header">
-			<div class="top-line">
-				<div class="container">
-					<div class="row">
-						<a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
-						<ul class="social-list">
-							<li><a href="#"><div class="soc1"></div></a></li>
-							<li><a href="#"><div class="tw"></div></a></li>
-							<li><a href="#"><div class="pi"></div></a></li>
-							<li><a href="#"><div class="ins"></div></a></li>
-							<li><a href="#"><div class="f"></div></a></li>
-							<li><a href="#"><div class="soc2"></div></a></li>
-						</ul>
-					</div>
-					<div class="row">
-						<ul class="main-menu">
-							<li class="active"><a href="#">home</a></li>
-							<li><a href="#">product</a></li>
-							<li><a href="#">services</a></li>
-							<li><a href="#">contact</a></li>
-						</ul>
+				<div class="col xl5">
+					<div class="logo_block">
+						<a href="index.html" class="logo"><img src="img/logo.png" alt="Alcoquide"></a>
+						<div class="age_limit">18<span>+</span></div>
+						<div class="logo_descr">Все об алкоголе</div>
 					</div>
 				</div>
-			</div>
-			<div class="header-promo">
-				<div class="container">
-					<div class="row">
-						<h1 class="main-title base-title title">Visit Poz<span>nan</span></h1>
-					</div>
-					<div class="row">
-						<h2 class="base-title sub-title title">a city on the <span>Warta</span> river in west-central <span>Poland</span>, the region called 
-						<span>Greater Poland.</span></h2>
-					</div>
-				</div>
-				<div class="header-feature">
-					<div class="container">
-						<div class="row flex-grid">
-								<div class="feature-item">
-									<div class="feature-img"></div>
-									<div class="feature-text">
-										<div class="text">I&nbsp;was in&nbsp;Poznan once.The architecture is&nbsp;really awesome.</div>
-										<div class="name">Joe Wisdom, architect</div>
-									</div>
-								</div>
-		
-								<div class="feature-item">
-									<div class="feature-img"></div>
-									<div class="feature-text">
-										<div class="text">I&nbsp;was in&nbsp;Poznan once.The architecture is&nbsp;really awesome.</div>
-										<div class="name">Joe Wisdom, architect</div>
-									</div>
-								</div>
-		
-		
-								<div class="feature-item">
-									<div class="feature-img"></div>
-									<div class="feature-text">
-										<div class="text">I&nbsp;was in&nbsp;Poznan once.The architecture is&nbsp;really awesome.</div>
-										<div class="name">Joe Wisdom, architect</div>
-									</div>
-								</div>
-		
-				
-								<div class="feature-item">
-									<div class="feature-img"></div>
-									<div class="feature-text">
-										<div class="text">I&nbsp;was in&nbsp;Poznan once.The architecture is&nbsp;really awesome.</div>
-										<div class="name">Joe Wisdom, architect</div>
-									</div>
-								</div>
-		
+
+				<div class="col xl7">
+					<div class="user-block">
+						<div class="user-panel">
+							<ul class="list-lang">
+								<li class="list-lang__item"><a href="#"><img src="img/lang_en.png"></a></li>
+							</ul>
+							<ul class="user-panel__list">
+								<li class="user-panel__item"><a href="#"><i class="fa fa-star" aria-hidden="true"></i><span>Избранное</span></a></li>
+								<li class="user-panel__item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i><span>Добавить тост</span></a></li>
+								<li class="user-panel__item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i><span>Добавить рецепт</span></a></li>
+							</ul>
 						</div>
+						<a href="javascript:void(0)" id="user-login" class="user-login">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<div class="user-name">
+								<span>Антон</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<div class="user-avatar"><img src="img/avatar_small.png" alt="Avatar"></div>
+						</a>
 					</div>
 				</div>
-			</div>
-		</header>
 
-		<div class="content">
-			<div class="container">
-				<div class="col-md-3 sidebar">
-					<div class="about">
-						<div class="title">about author</div>
-						<div class="text"><span>John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.</div>
-					</div>
-					<div class="post">
-						<div class="title">related posts</div>
-						<a href="#" class="post-item">
-							<div class="post-img">
-								<img src="img/img1.png" alt="i">
-							</div>
-							<div class="post-content">
-								<div class="post-title">POZNAN AT NIGHT</div>
-								<div class="comment">
-									<div class="coment"></div>
-									<div class="text">10 Comments</div>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="post-item">
-							<div class="post-img">
-								<img src="img/img2.png" alt="i">
-							</div>
-							<div class="post-content">
-								<div class="post-title">PEOPLE TO MEET</div>
-								<div class="comment">
-									<div class="coment"></div>
-									<div class="text">21 Comments</div>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="post-item">
-							<div class="post-img">
-								<img src="img/img3.png" alt="i">
-							</div>
-							<div class="post-content">
-								<div class="post-title">VISIT OUR OFFICE</div>
-								<div class="comment">
-									<div class="coment"></div>
-									<div class="text">17 Comments</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="currency">
-						<div class="title">currency</div>
-							<table>
-								<tr class="table-title">
-									<td>Date</td>
-									<td>Value</td>
-									<td>Status</td>
-									<td>Diff</td>
-								</tr>
-								<tr>
-									<td>22.1</td>
-									<td>459.5</td>
-									<td><div class="arrow-green"></div></td>
-									<td>+1.0</td>
-								</tr>
-								<tr>
-									<td>22.1</td>
-									<td>459.5</td>
-									<td><div class="arrow-red"></div></td>
-									<td>+1.0</td>
-								</tr>
-								<tr>
-									<td>22.1</td>
-									<td>459.5</td>
-									<td><div class="arrow-green"></div></td>
-									<td>+1.0</td>
-								</tr>
-							</table>
-					</div>
-				</div><!-- //sidebar -->
-				<div class="col-md-9 main-content">
-					<div class="main-content-wrap">
-						<div class="content-top">
-							<div class="content-header">
-								<div class="title">WHY SHOULD YOU COME TO POZNAN</div>
-								<div class="row flex-grid">
-									<div class="icon-wrap">
-										<div class="icon">11 Nov <br> 2013</div>
-										<div class="icon">by <br> John Doe</div>
-									</div>
-									<div class="text pr">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio  		em nec elit. Sed posuere 
-										consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla. 
-										Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla... 
-									</div>
-								</div><!-- //row -->
-								<div class="row">
-									<div class="col-md-2"></div>
-									<div class="col-md-10 flex-grid">
-										<a href="#" class="more">read more</a>
-										<div class="likes-wrap">
-											<a href="#">
-												<div class="icon like-white"></div>
-												<div class="text">10 likes</div>
-											</a>
-											<a href="#">
-												<div class="icon coment-white"></div>
-												<div class="text">22 comments</div>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div><!-- //content-top -->
-						<div class="content-center">
-							<div class="row flex-grid">
-						
-								<div class="col-md-6 content-item">
-									<div class="box">
-										<div class="title">NEW ATTRACTIONS</div>
-										<div class="posted">Posted by <a href="#">John Doe</a> on <a href="#">10 Nov 2013</a></div>
-										<div class="text">
-											Donec sed odio dui. Duis mollis, est non commodo luctus, 
-											nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-											Sed posuere consectetur est at lobortis.
-										</div>
-											<div class="more-span">more...</div>
-									</div>
-									<div class="line-like">
-										<a href="#">
-											<div class="like"></div>
-											<div>55</div>
-										</a>
-										<a href="#">	
-											<div class="coment-blue"></div>
-											<div>56</div>
-										</a>
-									</div>
-									<div class="shadow"></div>
-									<div class="shadow2"></div>
-								</div><!-- //content-item -->
-						
-								<div class="col-md-6 content-item">
-									<div class="box">
-										<div class="title">LET’S MEET ON OLD MARKET SQUARE IT WILL BE FUN</div>
-										<div class="posted">Posted by <a href="#">John Doe</a> on <a href="#">10 Nov 2013</a></div>
-										<div class="text">
-											Donec sed odio dui. Duis mollis, est non commodo luctus, 
-											nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-											Sed posuere consectetur est at lobortis. Eget lacinia odio sem nec elit. 
-											Sed posuere consectetur est at lobortis.eget lacinia...
-										</div>
-											<div class="more-span">more...</div>
-									</div>
-									<div class="line-like">
-										<a href="#">
-											<div class="like"></div>
-											<div>55</div>
-										</a>
-										<a href="#">	
-											<div class="coment-blue"></div>
-											<div>56</div>
-										</a>
-									</div>
-									<div class="shadow"></div>
-									<div class="shadow2"></div>
-								</div><!-- //content-item -->
-						
-							</div><!-- //row -->
+			</div>
+			<div class="row">
+				<div class="col xl6">
+					<div class="form-block">
+						<div class="choise-product">
+							<select>
+								<option value="" selected>Напитки</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
 						</div>
-							<div class="here-wrpa">
-								<div class="here">your ad here
-									<div class="shadow"></div>
-									<div class="shadow2"></div>
-								</div>
+						<form id="search">
+							<span>Найти:</span>
+							<input type="search" required>
+							<label class="label-icon" for="search"></label>
+							<div class="file-btn__wrap input-btn">
+								<input id="file" name="file" type="file" value="">
+								<i class="fa fa-camera" aria-hidden="true"></i>
 							</div>
+							<div class="submit-btn__wrap input-btn">
+								<input id="submit" name="submit" type="submit" value="">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</form>
 					</div>
-				</div><!-- //main-content -->
-			</div>
-		</div>
-
-		<!-- Map -->
-		<div class="section-map">
-			<div class="container"><div class="title">WHERE CAN I FIND MORE INFORMATION</div></div>
-			<div class="map" id="js-contacts">
-			    <div id="map" class="contacts-map"></div>
-			</div><!-- /.map -->
-		</div>
-
-		<footer>
-			<div class="container">
-				<div class="row flex-grid">
-					<a href="index.html" class="logo">
-						<img src="img/logo.png" alt="i">
-					</a>
-					<ul class="bottom-menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Product</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Contact</a></li>
+				</div>
+				<div class="col xl6">
+					<ul class="menu">
+						<li class="menu_item">
+							<a href="#" class="menu_list">Рейтинги</a>
+							<a href="#" class="menu_list">Коктейли</a>
+							<a href="#" class="menu_list">Обзоры</a>
+							<a href="#" class="menu_list">Тосты</a>
+						</li>
 					</ul>
 				</div>
-				<div class="row copy">all rights reserved 2013 </div>
 			</div>
-		</footer>
-
-	</div><!-- //wrapper -->
-	
-	<div class="hidden"></div>
-
-	<div class="loader">
-		<div class="loader_inner"></div>
+		
+		</div>
+	</header>
+	<div class="promo">
+		<img src="img/promo_bg.jpg" alt="promo" class="promo__img">
+			<div class="promo-text">Найти <br> лучшие напитки <br> <span>легко!</span></div>
 	</div>
 
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
+	<div class="rubrics">
+		<div class="container">
+			<div class="row">
+
+				<a href="javascript:void(0)" class="rubric-item col xl4">
+					<div class="rubric-item__title">
+						<h2 class="title-text">Лучшие вина</h2>
+						<span class="title-price">до 500р.</span>
+					</div>
+					<div class="rubric-item__content">
+						<div class="rubric-item__image">
+							<img src="img/vino_bottle.png" alt="vino">
+						</div>
+						<img src="img/vino.jpg" alt="bg" class="rubric-item__bg">
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" class="rubric-item col xl4">
+					<div class="rubric-item__title">
+						<h2 class="title-text">Лучший коньяк</h2>
+						<span class="title-price">до 3000р.</span>
+					</div>
+					<div class="rubric-item__content">
+						<div class="rubric-item__image">
+							<img src="img/cognac_bottle.png" alt="vino">
+						</div>
+						<img src="img/cognac.jpg" alt="bg" class="rubric-item__bg">
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" class="rubric-item col xl4">
+					<div class="rubric-item__title">
+						<h2 class="title-text">Лучшие вина</h2>
+						<span class="title-price">до 500р.</span>
+					</div>
+					<div class="rubric-item__content">
+						<div class="rubric-item__image">
+							<img src="img/vino_bottle.png" alt="vino">
+						</div>
+						<img src="img/liquor_bg.jpg" alt="bg" class="rubric-item__bg">
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" class="rubric-item col xl4">
+					<div class="rubric-item__title">
+						<h2 class="title-text">Лучший ликеры</h2>
+						<span class="title-price">до 500р.</span>
+					</div>
+					<div class="rubric-item__content">
+						<div class="rubric-item__image">
+							<img src="img/liquor_bottle.png" alt="vino">
+						</div>
+						<img src="img/liquor_bg.jpg" alt="bg" class="rubric-item__bg">
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" class="rubric-item col xl4">
+					<div class="rubric-item__title">
+						<h2 class="title-text">Лучшие вина</h2>
+						<span class="title-price">до 500р.</span>
+					</div>
+					<div class="rubric-item__content">
+						<div class="rubric-item__image">
+							<img src="img/vino_bottle.png" alt="vino">
+						</div>
+						<img src="img/vino.jpg" alt="bg" class="rubric-item__bg">
+					</div>
+				</a>
+
+				<a href="javascript:void(0)" class="rubric-item col xl4">
+					<div class="rubric-item__title">
+						<h2 class="title-text">Лучшие вина</h2>
+						<span class="title-price">до 500р.</span>
+					</div>
+					<div class="rubric-item__content">
+						<div class="rubric-item__image">
+							<img src="img/vino_bottle.png" alt="vino">
+						</div>
+						<img src="img/vino.jpg" alt="bg" class="rubric-item__bg">
+					</div>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="favorite">
+		<div class="container">
+			<div class="row">
+				<div class="col xl9 favorite-drinks">
+					<div class="col xl12 favorite-drinks__title base-title"><img src="img/icon1.png" alt="icon"><span>Любимые напитки</span></div>
+
+					<div class="favorite-drinks__item-wrap">
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<img src="img/product.jpg" alt="product" class="favorite-drinks__item_img">
+							<div class="favorite-drinks__item_content">
+								<div class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+						
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<img src="img/product.jpg" alt="product" class="favorite-drinks__item_img">
+							<div class="favorite-drinks__item_content">
+								<div class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+						
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<img src="img/product.jpg" alt="product" class="favorite-drinks__item_img">
+							<div class="favorite-drinks__item_content">
+								<div class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</div>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<div class="item-brand_name">Champagne, Франция</div>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col xl3 favorite-cocktails">
+					<div class="col xl12 favorite-cocktails__title base-title"><img src="img/icon2.png" alt="icon"><span>Любимые коктейли</span></div>
+
+					<div class="col xl12 favorite-cocktails__item hoverable">
+						<div class="favorite-cocktails__item_avatar">
+							<img src="img/avatar_small.png" alt="ava">
+						</div>
+						<div class="favorite-cocktails__item_content">
+							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+							<div class="favorite-cocktails__item_based">
+								<div class="item_based_text">На основе:</div>
+								<div class="item_based_name">Текилы</div>
+							</div>	
+							<div class="item_rating_star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
+							<div class="favorite-drinks__item_statistics">
+								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col xl12 favorite-cocktails__item hoverable">
+						<div class="favorite-cocktails__item_avatar">
+							<img src="img/avatar_small.png" alt="ava">
+						</div>
+						<div class="favorite-cocktails__item_content">
+							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+							<div class="favorite-cocktails__item_based">
+								<div class="item_based_text">На основе:</div>
+								<div class="item_based_name">Текилы</div>
+							</div>	
+							<div class="item_rating_star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
+							<div class="favorite-drinks__item_statistics">
+								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col xl12 favorite-cocktails__item hoverable">
+						<div class="favorite-cocktails__item_avatar">
+							<img src="img/avatar_small.png" alt="ava">
+						</div>
+						<div class="favorite-cocktails__item_content">
+							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+							<div class="favorite-cocktails__item_based">
+								<div class="item_based_text">На основе:</div>
+								<div class="item_based_name">Текилы</div>
+							</div>	
+							<div class="item_rating_star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
+							<div class="favorite-drinks__item_statistics">
+								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col xl12 favorite-cocktails__item hoverable">
+						<div class="favorite-cocktails__item_avatar">
+							<img src="img/avatar_small.png" alt="ava">
+						</div>
+						<div class="favorite-cocktails__item_content">
+							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+							<div class="favorite-cocktails__item_based">
+								<div class="item_based_text">На основе:</div>
+								<div class="item_based_name">Текилы</div>
+							</div>	
+							<div class="item_rating_star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
+							<div class="favorite-drinks__item_statistics">
+								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col xl12 favorite-cocktails__item hoverable">
+						<div class="favorite-cocktails__item_avatar">
+							<img src="img/avatar_small.png" alt="ava">
+						</div>
+						<div class="favorite-cocktails__item_content">
+							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+							<div class="favorite-cocktails__item_based">
+								<div class="item_based_text">На основе:</div>
+								<div class="item_based_name">Текилы</div>
+							</div>	
+							<div class="item_rating_star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
+							<div class="favorite-drinks__item_statistics">
+								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="row">
+
+				<div class="content-wrap">
+					<div class="col xl4 recipes">
+						<div class="col xl12 favorite-cocktails__title base-title"><img src="img/icon-text.png" alt="icon-text.png"><span>Новые рецепты коктейлей</span></div>
+
+						<div class="col xl12 recipes-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div>	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 recipes-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div>	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 recipes-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div>	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 recipes-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div>	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 recipes-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div>	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="col xl4 reviews">
+						<div class="col xl12 favorite-cocktails__title base-title">
+							<img src="img/icon-review.png" alt="icon"><span>Новые отзывы</span>
+						</div>
+
+						<div class="col xl12 reviews-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<div class="reviews_name">Антон Емельянов</div>
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="read_review"><span>Читать отзыв</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 reviews-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<div class="reviews_name">Антон Емельянов</div>
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="read_review"><span>Читать отзыв</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 reviews-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<div class="reviews_name">Антон Емельянов</div>
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="read_review"><span>Читать отзыв</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 reviews-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<div class="reviews_name">Антон Емельянов</div>
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="read_review"><span>Читать отзыв</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 reviews-item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<div class="reviews_name">Антон Емельянов</div>
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="read_review"><span>Читать отзыв</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="col xl4 new-drinks">
+						<div class="col xl12 favorite-cocktails__title base-title"><img src="img/icon3.png" alt="icon"><span>Новые напитки</span></div>
+
+						<div class="col xl12 new-drinks_item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 new-drinks_item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 new-drinks_item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 new-drinks_item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col xl12 new-drinks_item base_content_item hoverable">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/product_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
+								<!-- <div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Текилы</div>
+								</div> -->	
+								<div class="base_content_item_wrap">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col xl3">
+					<div class="col xl12">
+						<div class="logo_block">
+							<a href="index.html" class="logo"><img src="img/logo.png" alt="Alcoquide"></a>
+						</div>
+					</div>
+					<div class="col xl12 footer_lang">
+						<ul class="list-lang">
+							<li class="list-lang__item"><a href="#"><img src="img/lang_ru.png"></a></li>
+							<li class="list-lang__item"><a href="#"><img src="img/lang_en.png"></a></li>
+						</ul>
+						<div class="logo_descr">Все об алкоголе</div>
+					</div>
+				</div>
+				<div class="col xl1">
+					<div class="age_limit">18<span>+</span></div>
+				</div>
+				<div class="col xl4 copyright_wrap"><div class="copyright">© 2017, ООО «Alcoguide». Все права защищены.</div></div>
+				<div class="col xl4 footer_menu">
+					<ul class="menu">
+						<li class="menu_item">
+							<a href="#" class="menu_list">Рейтинги</a>
+							<a href="#" class="menu_list">Коктейли</a>
+							<a href="#" class="menu_list">Обзоры</a>
+							<a href="#" class="menu_list">Тосты</a>
+						</li>
+					</ul>
+					<div class="agreement"><a href="#">Пользовательское соглашение</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqTgiOEmOCEDbhtk3cl7psWs5g-MB_kLU"></script>
-	<script src="js/google_map.js"></script>
-	
-	<script src="js/common.js"></script>
-	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
 </body>
 </html>
