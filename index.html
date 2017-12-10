@@ -19,6 +19,8 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
+	<link href="css/jquery.simplewizard.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -203,7 +205,7 @@
 										<div class="price__new">9 800Р</div>
 									</div>
 									<div class="product__buy">
-										<a href="#" class="button button--buy">Купить</a>
+										<a href="#add-popup" class="button button--buy add-to-cart popup" data-name="Amore" data-price="9800">Купить</a>
 										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
 									</div>
 								</div><!-- //product info -->
@@ -246,7 +248,7 @@
 										<div class="price__new">9 800Р</div>
 									</div>
 									<div class="product__buy">
-										<a href="#" class="button button--buy">Купить</a>
+										<a href="#add-popup" class="button button--buy add-to-cart popup" data-name="Love is" data-price="9800">Купить</a>
 										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
 									</div>
 								</div><!-- //product info -->
@@ -279,7 +281,7 @@
 										<div class="price__new">9 800Р</div>
 									</div>
 									<div class="product__buy">
-										<a href="#" class="button button--buy">Купить</a>
+										<a href="#add-popup" class="button button--buy add-to-cart popup" data-name="Горячий Санта" data-price="12800">Купить</a>
 										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
 									</div>
 								</div><!-- //product info -->
@@ -322,7 +324,7 @@
 										<div class="price__new">9 800Р</div>
 									</div>
 									<div class="product__buy">
-										<a href="#" class="button button--buy">Купить</a>
+										<a href="#add-popup" class="button button--buy add-to-cart popup" data-name="Звезданутый подарок" data-price="9800">Купить</a>
 										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
 									</div>
 								</div><!-- //product info -->
@@ -355,7 +357,7 @@
 										<div class="price__new">9 800Р</div>
 									</div>
 									<div class="product__buy">
-										<a href="#" class="button button--buy">Купить</a>
+										<a href="#add-popup" class="button button--buy add-to-cart popup" data-name="Двойной соблазн" data-price="9800">Купить</a>
 										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
 									</div>
 								</div><!-- //product info -->
@@ -765,15 +767,147 @@
 
 	</div><!-- //wrapper -->
 	
-	<div class="hidden"></div>
+	<div class="hidden">
+        <div id="main-popup" class="base-popup main-popup">
+            <form id="wizard1" class="wizard">
+                <div class="wizard-header">
+                    <ul class="nav nav-tabs">
+                        <div class="main-popup-title">Оформление заказа (<span id="step">1 </span>шаг из 4)</div>
+                        <li id="step-1" role="presentation" class="wizard-step-indicator">
+                            <a href="#start" class="step-1"><span class="icon">1</span>Проверка заказа и личные данные</a>
+                        </li>
+                        <li id="step-2" role="presentation" class="wizard-step-indicator">
+                            <a href="#profile" class="step-2"><span class="icon">2</span>Выбор упаковки</a>
+                        </li>
+                        <li id="step-3" role="presentation" class="wizard-step-indicator">
+                            <a href="#messages" class="step-3"><span class="icon">3</span>Доставка</a>
+                        </li>
+                        <li id="step-4" role="presentation" class="wizard-step-indicator">
+                            <a href="#finish" class="step-4"><span class="icon">4</span>Оплата</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wizard-content">
+                    <div id="start" class="wizard-step">
+                        
+                        <div class="cart">
+                            <div class="cart-calc">
+                                <div class="cart-message">
+                                    В вашем заказе <span id="count-cart">0</span>
+                                    <span id="count-text">подарочный набор</span>
+                                </div>
+                                <div class="cart__info">
+                                	<div class="info__name">Название</div>
+                                	<div class="info__count">Кол-во</div>
+                                	<div class="info__price">Цена за шт.</div>
+                                	<div class="info__total">Итого</div>
+                                </div>
+                                <ul id="show-cart">
+
+                                </ul>
+                                <!-- <div>Sub Total: $<span id="sub-total"></span></div> -->
+                                <div class="total-base">Итого товаров на сумму: <span id="sub-total"></span><i>P </i> (без доставки)</div>
+                            </div>
+
+                           
+
+                           <!--  <div>
+                                <a href="" id="checkout">Checkout</a>
+                            </div> -->
+                        </div>
+                        <div class="cart-buttons-wrap">
+                        	<button type="button" class="wizard-next button">ПРОДОЛЖИТЬ И ВЫБРАТЬ УПАКОВКУ</button>
+                        	  <div>
+                        	    <a href="" class="clear-cart">Отменить и закрыть оформление заказа</a>
+                        		</div>
+                        </div>
+                       <!--  <button type="button" class="wizard-goto btn btn-primary" value="3">Go to last</button> -->
+                    </div>
+                    <div id="profile" class="wizard-step">
+                        <div class="title">Шаг 2</div>
+      
+                        <!-- <button type="button" class="wizard-prev btn btn-primary">Previous</button> -->
+                        <button type="button" class="wizard-next button">ПРОДОЛЖИТЬ</button>
+                        <div>
+                            <a href="" class="clear-cart">Отменить и закрыть оформление заказа</a>
+                        </div>
+                    </div>
+                    <div id="messages" class="wizard-step">
+                        <p>text3</p>
+                        <button type="button" class="wizard-next button">ПРОДОЛЖИТЬ</button>
+                        <div>
+                            <a href="" class="clear-cart">Отменить и закрыть оформление заказа</a>
+                        </div>
+                    </div>
+                    <div id="finish" class="wizard-step">
+                        <div>Итого к оплате:<span id="total"></span><i>P</i>(с учетом доставки и упаковки)</div>
+                        <!-- <button type="button" class="wizard-prev btn btn-primary">Previous</button>
+                        <button type="button" class="wizard-finish btn btn-primary">Finish</button>
+                        <button type="button" class="wizard-goto btn btn-primary" value="0">Go to first</button> -->
+                        <div>
+                            <a href="" class="clear-cart">Отменить и закрыть оформление заказа</a>
+                        </div>
+                        <div>
+                            <a href="" id="checkout" class="button">ОФОРМИТЬ ЗАКАЗ</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div><!-- //main popup -->
+
+        <div id="add-popup" class="base-popup">
+        		<div class="popup-icon">
+        			<img src="img/popup-icon.png" alt="">
+        		</div>
+						<div class="popup-text">
+							Ура! В корзину добавлен набор: <br>
+							<span>Эконом подарок</span>
+						</div>
+            <a href="#main-popup" class="popup button button-popup">ВЫБРАТЬ УПАКОВКУ И ОФОРМИТЬ ЗАКАЗ</a>
+            <div class="close-popup">Хочу добавить еще другие наборы</div>
+        </div>
+    </div>
 
 
 
 	
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
+	<!-- <script src="libs/jquery/jquery-1.11.2.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+	<script src="libs/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="js/jquery.simplewizard.js"></script>
 	<script src="js/common.js"></script>
-	
+	<script>
+        $(function () {
+        	// $('.popup').magnificPopup();
+
+            $("#wizard1").simpleWizard({
+                cssClassStepActive: "active",
+                cssClassStepDone: "done",
+                onChange: function() {
+                    // alert("More to come..");
+                    changeMainTitle();
+                },
+                onFinish: function() {
+                    alert("Wizard finished")
+                }
+            });
+        });
+
+        function changeMainTitle() {
+            if ($('.step-2').closest('.wizard-step-indicator').hasClass('active')) {
+                   $('#step').html('2');
+                } 
+            else if($('.step-3').closest('.wizard-step-indicator').hasClass('active')) {
+                   $('#step').html('3');
+            } 
+            else if($('.step-4').closest('.wizard-step-indicator').hasClass('active')) {
+                $('#step').html('4');
+            } else {
+                $('#step').html('1');
+            }
+        }
+    </script>
 </body>
 </html>
