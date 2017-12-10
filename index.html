@@ -5,869 +5,775 @@
 
 	<meta charset="utf-8">
 
-	<title>Alcoguide</title>
+	<title>Заголовок</title>
 	<meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<script src="https://use.fontawesome.com/04bef785a0.js"></script>
 
-	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
-	<meta property="og:url"           content="https://alcoguide.com/" />
-	<meta property="og:type"          content="alcoguide website" />
-	<meta property="og:title"         content="The Future of Sleep Is Near" />
-	<meta property="og:description"   content="Something beautiful is coming. Stay tuned." />
-	<meta property="og:image"         content="https://alcoguide.com/img/share.jpg" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #a28064; }</style>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
 
 </head>
 
-<body class="home">
+<body>
 
-	<header class="header">
-		<div class="container">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="phone-block">
+								<a href="tel:+74952011842">+7 (495) 201-18-42</a>
+								<span>Ежедневно с 10 до 20</span>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="phone-block">
+								<a href="tel:+79092011842">+7 (909) 201-18-42</a>
+								<span>Viber, Whatsapp, Telegram</span>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<a href="index.html" class="logo">
+								<img src="img/logo.png" alt="Logo">
+							</a>
+						</div>
+						<div class="col-md-5">
+							<div class="header__address">
+								<a href="#contact" class="button">Написать нам</a>
+								<address>
+									<img src="img/shape-1.svg" class="address-icon">
+									<span>г.Москва, <br>ул.Паршина, д.4, офис 215</span>
+								</address>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="headder__menu">
+							<div class="col-md-4">
+								<ul class="achors">
+									<li class="forHer"><a href="#filter">Для нее</a></li>
+									<li class="forHim"><a href="#filter">Для него</a></li>
+									<li class="forCouple"><a href="#filter">Для пар </a></li>
+								</ul>
+							</div>
+							<div class="col-md-8 menu-wrap">
+								<ul class="menu">
+									<li><a href="#packaging">Как подарить?</a></li>
+									<li><a href="#return"> Обмен и возврат</a></li>
+									<li><a href="#delivery">Условия доставки</a></li>
+									<li><a href="#reviews">Отзывы</a></li>
+									<li><a href="#surpise">О нас </a></li>
+									<li><a href="#contact">Контакты</a></li>
+								</ul>
+								<a href="#" id="cart">
+									<img src="img/shopping-cart.svg" class="cart__icon">
+									<div id="cart__price" class="cart__price">113 890 &#8381;</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="header__title">20+ эротических наборов: <br> <span>используйте возможность сделать своей половинке <br>оригинальный подарок</span></div>
+						<div class="header__text">Начните 2018 год с удовольствия!</div>
+					</div>
+					<div class="row">
+						<div class="header__promo">
 		
-			<div class="row">
-
-				<div class="col xl5 l12 m12 s12">
-					<div class="logo_block">
-						<a href="index.html" class="logo"><img src="img/logo.png" alt="Alcoquide"></a>
-						<div class="age_limit">18<span>+</span></div>
-						<div class="logo_descr">Все об алкоголе</div>
-					</div>
-				</div>
-				<div class="col s12 mobile-menu">МЕНЮ</div>
-
-				<div class="col xl7 l12 m12">
-					<div class="user-block">
-						<div class="user-panel">
-							<ul class="list-lang">
-								<li class="list-lang__item"><a href="#"><img src="img/lang_en.png"></a></li>
-							</ul>
-							<ul class="user-panel__list">
-								<li class="user-panel__item"><a href="#"><i class="fa fa-star" aria-hidden="true"></i><span>Избранное</span></a></li>
-								<li class="user-panel__item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i><span>Добавить тост</span></a></li>
-								<li class="user-panel__item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i><span>Добавить рецепт</span></a></li>
-							</ul>
-						</div>
-						<a href="javascript:void(0)" id="user-login" class="user-login dropdown-button" data-activates='dropdown1'>
-							<i class="fa fa-user" aria-hidden="true"></i>
-							<div class="user-name">
-								<span>Антон</span>
-								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							<div class="promo__item">
+								<div class="promo__bg">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="63" viewBox="0 0 109 63"><defs><path id="6gt8a" d="M533.62 473.7c13.15-7.31 22.93-9.6 29.68-3.73 6.71 5.13 10.4 18.41 10.33 25.4.16 15.04-23.28 29.5-50.86 29-14.19-.66-25.94-2.3-35.43-8.26-9.34-5.68-16.42-15.69-17.78-26.55-1.7-11.66 8.55-8.25 21.83-7.62 13.37 1.22 29.76-.34 42.23-8.25z"/></defs><g><g transform="translate(-466 -463)"><use fill="#f6f4ec" xlink:href="#6gt8a"/></g></g></svg>
+								</div>
+								<div class="promo__icon">
+									<img src="img/icon-sale.svg">
+								</div>
+								<div class="promo__text">На 15% дешевле среднерыночной цены</div>
 							</div>
-							<div class="user-avatar"><img src="img/avatar_small.png" alt="Avatar"></div>
-						</a>
-						<ul id='dropdown1' class='dropdown-content'>
-							<li><a href="#!">one</a></li>
-							<li><a href="#!">two</a></li>
-							<li class="divider"></li>
-							<li><a href="#!">three</a></li>
-							<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-							<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-						</ul>
+		
+							<div class="promo__item">
+								<div class="promo__bg">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="63" viewBox="0 0 109 63"><defs><path id="6gt8a" d="M533.62 473.7c13.15-7.31 22.93-9.6 29.68-3.73 6.71 5.13 10.4 18.41 10.33 25.4.16 15.04-23.28 29.5-50.86 29-14.19-.66-25.94-2.3-35.43-8.26-9.34-5.68-16.42-15.69-17.78-26.55-1.7-11.66 8.55-8.25 21.83-7.62 13.37 1.22 29.76-.34 42.23-8.25z"/></defs><g><g transform="translate(-466 -463)"><use fill="#f6f4ec" xlink:href="#6gt8a"/></g></g></svg>
+								</div>
+								<div class="promo__icon">
+									<div class="text">WOW!</div>
+								</div>
+								<div class="promo__text">Эксклюзивный и необычный подарок с WOW-эффектом</div>
+							</div>
+		
+							<div class="promo__item">
+								<div class="promo__bg">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="63" viewBox="0 0 109 63"><defs><path id="6gt8a" d="M533.62 473.7c13.15-7.31 22.93-9.6 29.68-3.73 6.71 5.13 10.4 18.41 10.33 25.4.16 15.04-23.28 29.5-50.86 29-14.19-.66-25.94-2.3-35.43-8.26-9.34-5.68-16.42-15.69-17.78-26.55-1.7-11.66 8.55-8.25 21.83-7.62 13.37 1.22 29.76-.34 42.23-8.25z"/></defs><g><g transform="translate(-466 -463)"><use fill="#f6f4ec" xlink:href="#6gt8a"/></g></g></svg>
+								</div>
+								<div class="promo__icon">
+									<img src="img/icon-gifts.svg" alt="">
+								</div>
+								<div class="promo__text">Стильная подарочная упаковка на выбор</div>
+							</div>
+		
+							<div class="promo__item">
+								<div class="promo__bg">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="63" viewBox="0 0 109 63"><defs><path id="6gt8a" d="M533.62 473.7c13.15-7.31 22.93-9.6 29.68-3.73 6.71 5.13 10.4 18.41 10.33 25.4.16 15.04-23.28 29.5-50.86 29-14.19-.66-25.94-2.3-35.43-8.26-9.34-5.68-16.42-15.69-17.78-26.55-1.7-11.66 8.55-8.25 21.83-7.62 13.37 1.22 29.76-.34 42.23-8.25z"/></defs><g><g transform="translate(-466 -463)"><use fill="#f6f4ec" xlink:href="#6gt8a"/></g></g></svg>
+								</div>
+								<div class="promo__icon">
+									<img src="img/icon-locklove.svg" alt="">
+								</div>
+								<div class="promo__text">Прикольные подарки для новичков и интересные комбинации для опытных</div>
+							</div>
+		
+							<div class="promo__item">
+								<div class="promo__bg">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="63" viewBox="0 0 109 63"><defs><path id="6gt8a" d="M533.62 473.7c13.15-7.31 22.93-9.6 29.68-3.73 6.71 5.13 10.4 18.41 10.33 25.4.16 15.04-23.28 29.5-50.86 29-14.19-.66-25.94-2.3-35.43-8.26-9.34-5.68-16.42-15.69-17.78-26.55-1.7-11.66 8.55-8.25 21.83-7.62 13.37 1.22 29.76-.34 42.23-8.25z"/></defs><g><g transform="translate(-466 -463)"><use fill="#f6f4ec" xlink:href="#6gt8a"/></g></g></svg>
+								</div>
+								<div class="promo__icon">
+									<img src="img/icon-mask.svg" alt="">
+								</div>
+								<div class="promo__text">Анонимная доставка — не будете смущены при получении</div>
+							</div>
+		
+						</div>
 					</div>
 				</div>
-
 			</div>
-			<div class="row">
-				<div class="col xl6 l6 m12 s12">
-					<div class="form-block">
-						<div class="choise-product">
-							<select>
-								<option value="" selected>Напитки</option>
-								<option value="1">Option 1</option>
-								<option value="2">Option 2</option>
-								<option value="3">Option 3</option>
-							</select>
+		</header>
+		
+		<main class="content">
+			<div class="container">
+				<div class="checkbox__filter" id="filter">
+					<form>
+						<div class="flter__item">
+							<input type="radio" id="forher" checked>
+							<label class="active"  for="forher"><span>Для нее</span></label>
 						</div>
-						<form id="search">
-							<span>Найти:</span>
-							<input type="search" required>
-							<label class="label-icon" for="search"></label>
-							<div class="file-btn__wrap input-btn">
-								<input id="file" name="file" type="file" value="">
-								<i class="fa fa-camera" aria-hidden="true"></i>
-							</div>
-							<div class="submit-btn__wrap input-btn">
-								<input id="submit" name="submit" type="submit" value="">
-								<i class="fa fa-search" aria-hidden="true"></i>
-							</div>
-						</form>
-					</div>
+						<div class="flter__item">
+							<input type="radio" id="forhim">
+							<label  for="forhim"><span>Для него</span></label>
+						</div>
+						<div class="flter__item">
+							<input type="radio" id="forcopule">
+							<label  for="forcopule"><span>Для пар</span></label>
+						</div>
+					</form>
 				</div>
-				<div class="col xl6 l6 m12 s12">
-					<ul class="menu">
-						<li class="menu_item">
-							<a href="#" class="menu_list">Рейтинги</a>
-							<a href="#" class="menu_list">Коктейли</a>
-							<a href="#" class="menu_list">Обзоры</a>
-							<a href="#" class="menu_list">Тосты</a>
-						</li>
+			</div>
+		
+			<div class="products">
+				<div class="container">
+					<ul class="products__filter">
+						<li>Все подарки<span>(13)</span></li>
+						<li>Максимальное удовольствие<span>(5)</span></li>
+						<li>Виртуальный секс<span>(6)</span></li>
+						<li>WOW эффект<span>(2)</span></li>
 					</ul>
 				</div>
-			</div>
 		
-		</div>
-	</header>
-	<div class="promo">
-		<img src="img/promo_bg.jpg" alt="promo" class="promo__img">
-			<div class="promo-text">Найти <br> лучшие напитки <br> <span>легко!</span></div>
-	</div>
+				<div class="product">
+					<div class="container">
+					<img src="img/girl-1.png" alt="" class="product__bg">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="product__info">
+									<div class="product__title">Amore</div>
+									<ul class="product__list">
+										<li class="product__item">
+											<span class="item__number">1</span><span class="text">Вибростимулятор</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">2</span><span class="text">Косметика для ухода за кожей</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">3</span><span class="text">Эротическое белье</span>
+										</li>
+									</ul>
+									<div class="product__bonus"><span>+ Упаковка подарка на выбор (бесплатно только сегодня!)</span></div>
+									<div class="product__price">
+										<div class="price__old">12 900Р</div>
+										<div class="price__new">9 800Р</div>
+									</div>
+									<div class="product__buy">
+										<a href="#" class="button button--buy">Купить</a>
+										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
+									</div>
+								</div><!-- //product info -->
+							</div>
+							<div class="col-md-7">
+								<div class="product__image">
+									<img src="img/product-1.jpg" alt="" class="product__img">
+								</div>
+							</div>
+						</div><!-- //row -->
+					</div><!-- //container -->
+				</div><!-- //product -->
+		
+				<div class="product product--odd">
+					<div class="container">
+					<!-- <img src="img/girl-2.png" alt="" class="product__bg"> -->
+						<div class="row">
+							<div class="col-md-7">
+								<div class="product__image">
+									<img src="img/product-2.png" alt="" class="product__img">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="product__info">
+									<div class="product__title">Love is</div>
+									<ul class="product__list">
+										<li class="product__item">
+											<span class="item__number">1</span><span class="text">Вибростимулятор</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">2</span><span class="text">Косметика для ухода за кожей</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">3</span><span class="text">Эротическое белье</span>
+										</li>
+									</ul>
+									<div class="product__bonus"><span>+ Упаковка подарка на выбор (бесплатно только сегодня!)</span></div>
+									<div class="product__price">
+										<div class="price__old">12 900Р</div>
+										<div class="price__new">9 800Р</div>
+									</div>
+									<div class="product__buy">
+										<a href="#" class="button button--buy">Купить</a>
+										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
+									</div>
+								</div><!-- //product info -->
+							</div>
+						</div><!-- //row -->
+					</div><!-- //container -->
+				</div><!-- //product -->
+		
+				<div class="product" id="product-3">
+					<div class="container">
+					<img src="img/girl-3.png" alt="" class="product__bg">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="product__info">
+									<div class="product__title">Горячий Санта</div>
+									<ul class="product__list">
+										<li class="product__item">
+											<span class="item__number">1</span><span class="text">Вибростимулятор</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">2</span><span class="text">Косметика для ухода за кожей</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">3</span><span class="text">Эротическое белье</span>
+										</li>
+									</ul>
+									<div class="product__bonus"><span>+ Упаковка подарка на выбор (бесплатно только сегодня!)</span></div>
+									<div class="product__price">
+										<div class="price__old">12 900Р</div>
+										<div class="price__new">9 800Р</div>
+									</div>
+									<div class="product__buy">
+										<a href="#" class="button button--buy">Купить</a>
+										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
+									</div>
+								</div><!-- //product info -->
+							</div>
+							<div class="col-md-7">
+								<div class="product__image">
+									<img src="img/product-3.png" alt="" class="product__img">
+								</div>
+							</div>
+						</div><!-- //row -->
+					</div><!-- //container -->
+				</div><!-- //product -->
+		
+				<div class="product product--odd" id="product-4">
+					<div class="container">
+					<!-- <img src="img/girl-2.png" alt="" class="product__bg"> -->
+						<div class="row">
+							<div class="col-md-7">
+								<div class="product__image">
+									<img src="img/product-4.png" alt="" class="product__img">
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="product__info">
+									<div class="product__title">Звезданутый <br>подарок</div>
+									<ul class="product__list">
+										<li class="product__item">
+											<span class="item__number">1</span><span class="text">Вибростимулятор</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">2</span><span class="text">Косметика для ухода за кожей</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">3</span><span class="text">Эротическое белье</span>
+										</li>
+									</ul>
+									<div class="product__bonus"><span>+ Упаковка подарка на выбор (бесплатно только сегодня!)</span></div>
+									<div class="product__price">
+										<div class="price__old">12 900Р</div>
+										<div class="price__new">9 800Р</div>
+									</div>
+									<div class="product__buy">
+										<a href="#" class="button button--buy">Купить</a>
+										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
+									</div>
+								</div><!-- //product info -->
+							</div>
+						</div><!-- //row -->
+					</div><!-- //container -->
+				</div><!-- //product -->
 
-	<div class="rubrics">
-		<div class="container">
-			<div class="row">
+				<div class="product margin--top" id="product-5">
+					<div class="container">
+					<!-- <img src="img/girl-3.png" alt="" class="product__bg"> -->
+						<div class="row">
+							<div class="col-md-5">
+								<div class="product__info">
+									<div class="product__title">Двойной соблазн</div>
+									<ul class="product__list">
+										<li class="product__item">
+											<span class="item__number">1</span><span class="text">Вибростимулятор</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">2</span><span class="text">Косметика для ухода за кожей</span>
+										</li>
+										<li class="product__item">
+											<span class="item__number">3</span><span class="text">Эротическое белье</span>
+										</li>
+									</ul>
+									<div class="product__bonus"><span>+ Упаковка подарка на выбор (бесплатно только сегодня!)</span></div>
+									<div class="product__price">
+										<div class="price__old">12 900Р</div>
+										<div class="price__new">9 800Р</div>
+									</div>
+									<div class="product__buy">
+										<a href="#" class="button button--buy">Купить</a>
+										<a href="#" class="buy-one-click">Быстрый заказ в 1 клик</a>
+									</div>
+								</div><!-- //product info -->
+							</div>
+							<div class="col-md-7">
+								<div class="product__image">
+									<img src="img/product-5.png" alt="" class="product__img">
+								</div>
+							</div>
+						</div><!-- //row -->
+					</div><!-- //container -->
+				</div><!-- //product -->
+		
+			</div><!-- //products -->
 
-				<a href="javascript:void(0)" class="rubric-item col xl4 l6 m6 s12">
-					<div class="rubric-item__title">
-						<h2 class="title-text">Лучшие вина</h2>
-						<span class="title-price">до 500р.</span>
-					</div>
-					<div class="rubric-item__content">
-						<div class="rubric-item__image">
-							<img src="img/vino_bottle.png" alt="vino">
-						</div>
-						<img src="img/vino.jpg" alt="bg" class="rubric-item__bg">
-					</div>
-				</a>
-
-				<a href="javascript:void(0)" class="rubric-item col xl4 l6 m6 s12">
-					<div class="rubric-item__title">
-						<h2 class="title-text">Лучший коньяк</h2>
-						<span class="title-price">до 3000р.</span>
-					</div>
-					<div class="rubric-item__content">
-						<div class="rubric-item__image">
-							<img src="img/cognac_bottle.png" alt="vino">
-						</div>
-						<img src="img/cognac.jpg" alt="bg" class="rubric-item__bg">
-					</div>
-				</a>
-
-				<a href="javascript:void(0)" class="rubric-item col xl4 l6 m6 s12">
-					<div class="rubric-item__title">
-						<h2 class="title-text">Лучшие вина</h2>
-						<span class="title-price">до 500р.</span>
-					</div>
-					<div class="rubric-item__content">
-						<div class="rubric-item__image">
-							<img src="img/vino_bottle.png" alt="vino">
-						</div>
-						<img src="img/liquor_bg.jpg" alt="bg" class="rubric-item__bg">
-					</div>
-				</a>
-
-				<a href="javascript:void(0)" class="rubric-item col xl4 l6 m6 s12">
-					<div class="rubric-item__title">
-						<h2 class="title-text">Лучший ликеры</h2>
-						<span class="title-price">до 500р.</span>
-					</div>
-					<div class="rubric-item__content">
-						<div class="rubric-item__image">
-							<img src="img/liquor_bottle.png" alt="vino">
-						</div>
-						<img src="img/liquor_bg.jpg" alt="bg" class="rubric-item__bg">
-					</div>
-				</a>
-
-				<a href="javascript:void(0)" class="rubric-item col xl4 l6 m6 s12">
-					<div class="rubric-item__title">
-						<h2 class="title-text">Лучшие вина</h2>
-						<span class="title-price">до 500р.</span>
-					</div>
-					<div class="rubric-item__content">
-						<div class="rubric-item__image">
-							<img src="img/vino_bottle.png" alt="vino">
-						</div>
-						<img src="img/vino.jpg" alt="bg" class="rubric-item__bg">
-					</div>
-				</a>
-
-				<a href="javascript:void(0)" class="rubric-item col xl4 l6 m6 s12">
-					<div class="rubric-item__title">
-						<h2 class="title-text">Лучшие вина</h2>
-						<span class="title-price">до 500р.</span>
-					</div>
-					<div class="rubric-item__content">
-						<div class="rubric-item__image">
-							<img src="img/vino_bottle.png" alt="vino">
-						</div>
-						<img src="img/vino.jpg" alt="bg" class="rubric-item__bg">
-					</div>
-				</a>
-
+			<div class="container">
+				<div id="show-all">Показать еще подарки</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="favorite">
-		<div class="container">
-			<div class="row">
-				<div class="col xl9 favorite-drinks l12">
-					<div class="col xl12 favorite-drinks__title base-title"><img src="img/icon1.png" alt="icon"><span>Любимые напитки</span></div>
+			<div class="notfind">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="notfind__title">Не нашли то, что хотелось бы подарить?</div>
+							<div class="notfind__text">Свяжитесь с нами и напишите товары, которые Вы хотите подарить и мы сделаем для Вас предложение по цене!</div>
+							<a href="#" class="button button--buy button--found">ОТПРАВИТЬ ЗАЯВКУ</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-					<div class="favorite-drinks__item-wrap">
-						<div class="col xl4 favorite-drinks__item hoverable">
-							<div class="favorite-drinks__star">
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-							</div>
-							<img src="img/product.jpg" alt="product" class="favorite-drinks__item_img">
-							<div class="favorite-drinks__item_content">
-								<div class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</div>
-								<div class="favorite-drinks__item_price">2000р.</div>
-								<div class="favorite-drinks__item_brand">
-									<div class="item-brand_text">Имя бренда:</div>
-									<div class="item-brand_name">Champagne, Франция</div>
-								</div>
-								<div class="favorite-drinks__item_rating">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>	
-									
-									<div class="favorite-drinks__item_about">
-										<a href="#" class="item_about_history">История</a>
-										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
-									</div>
-							</div>
+			<div class="packaging" id="packaging">
+				<div class="container">
+					<div class="row"><div class="base-title">3 варианта упаковки для вашего подарка</div></div>
+					<div class="row">
+						<div class="col-md-4 col-sm-12 packaging__item">
+							<div class="packaging__img one--img"><img src="img/packaging-1.png" alt="Упаковка"></div>
+							<div class="packaging__text">Однотонный подарочный пакет</div>
 						</div>
-						
-						<div class="col xl4 favorite-drinks__item hoverable">
-							<div class="favorite-drinks__star">
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-							</div>
-							<img src="img/product.jpg" alt="product" class="favorite-drinks__item_img">
-							<div class="favorite-drinks__item_content">
-								<div class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</div>
-								<div class="favorite-drinks__item_price">2000р.</div>
-								<div class="favorite-drinks__item_brand">
-									<div class="item-brand_text">Имя бренда:</div>
-									<div class="item-brand_name">Champagne, Франция</div>
-								</div>
-								<div class="favorite-drinks__item_rating">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>	
-									
-									<div class="favorite-drinks__item_about">
-										<a href="#" class="item_about_history">История</a>
-										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
-									</div>
-							</div>
+						<div class="col-md-4 col-sm-12 packaging__item">
+							<div class="packaging__img two--img"><img src="img/packaging-2.png" alt="Упаковка"></div>
+							<div class="packaging__text">Подарочная коробка<br>черного или красного цвета</div>
 						</div>
-						
-						<div class="col xl4 favorite-drinks__item hoverable">
-							<div class="favorite-drinks__star">
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-							</div>
-							<img src="img/product.jpg" alt="product" class="favorite-drinks__item_img">
-							<div class="favorite-drinks__item_content">
-								<div class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</div>
-								<div class="favorite-drinks__item_price">2000р.</div>
-								<div class="favorite-drinks__item_brand">
-									<div class="item-brand_text">Имя бренда:</div>
-									<div class="item-brand_name">Champagne, Франция</div>
+						<div class="col-md-4 col-sm-12 packaging__item">
+							<div class="packaging__img"><img src="img/packaging-3.png" alt="Упаковка"></div>
+							<div class="packaging__text">Подарочный чулок</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="confidentiality">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="base-title">Конфиденциальность — важный принцип нашей работы</div>
+							<div class="confidentiality__text">Мы бережем своих клиентов и разработали собственный алгоритм:</div>
+						</div>
+						<div class="col-md-6 col-sm-12">Во всем мире люди спокойно заказывают секс-игрушки, чтобы разнообразить свою сексуальную жизнь. В этом нет ничего стыдного. Но наш менталитет пока не развился до такой степени, чтобы не заглядывать в кровать соседей и не высказывать свое ценное мнение по любому вопросу. Поэтому многие нормальные люди стесняются заказывать эротические наборы, чтобы никто не увидел при получении.</div>
+					</div>
+					<div class="row">
+						<div class="confidentiality__content">
+							<div class="col-md-4 col-sm-12">
+								<div class="confidentiality__item">
+									<div class="confidentiality__number">01</div>
+									<div class="content-text">Вы оформляете заказ на готовый набор, или наш менеджер составляет индивидуальный комплект под ваши требования.</div>
 								</div>
-								<div class="favorite-drinks__item_rating">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>	
-									
-									<div class="favorite-drinks__item_about">
-										<a href="#" class="item_about_history">История</a>
-										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
-									</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="confidentiality__item">
+									<div class="confidentiality__number">02</div>
+									<div class="content-text">Мы красиво упаковываем ваш подарок в выбранном формате и укладываем его в черную непроницаемую коробку. </div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="confidentiality__item">
+									<div class="confidentiality__number number--3">03</div>
+									<div class="content-text">Вы получаете конфиденциальную посылку и открываете, где и когда вам будет удобно.</div>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
 
+			<div class="applications">
+				<div class="container">
+					<div class="applications__content">
+						<div class="row">
+							<div class="base-title">Применение игрушек положительно <br> скажется на вашей жизни</div>
+						</div>
+						<div class="row">
+
+							<div class="col-md-5 col-sm-12 col-md-offset-1">
+								<div class="applications__item">
+									<span>№1.</span><div>Укрепление семьи и налаживание отношений.</div>
+								</div>
+								<div class="applications__item">
+									<span>№2.</span><div>Повышение тонуса интимных мышц.</div>
+								</div>
+								<div class="applications__item">
+									<span>№3.</span><div>Разнообразие сексуальной жизни.</div>
+								</div>
+							</div>
+
+							<div class="col-md-5 col-sm-12 ">
+								<div class="applications__item">
+									<span>№4.</span> <div>Усиление интереса друг к другу.</div>
+								</div>
+								<div class="applications__item">
+									<span>№5.</span><div>Снятие физического и психологического напряжения.</div>
+								</div>
+								<div class="applications__item">
+									<span>№6.</span><div>Улучшение настроения и общего самочувствия.</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="toys24">
+				<div class="container">
+					<div class="row">
+							<div class="base-title">Эротический набор от «Toys42» <br> — 6 аргументов «ЗА»</div>
+						</div>
+						<div class="row">
+
+							<div class="col-md-6 col-sm-12">
+								<div class="toys24__item">
+									<div class="toys24__icon">
+										<img src="img/icon-mony.svg" alt="">
+									</div>
+									<div class="toys24__content">
+										<div class="toys24__title">Оптимальные цены.</div>
+										<div class="toys24__text">Вы с удовольствием обнаружите, что наши цены ниже на 10-15% средних по рынку. Если найдете еще дешевле — продадим по найденной вами цене.
+										</div>
+									</div>
+								</div>
+								<div class="toys24__item">
+									<div class="toys24__icon">
+										<img src="img/icon-fall.svg" alt="">
+									</div>
+									<div class="toys24__content">
+										<div class="toys24__title">Широкий ассортимент.</div>
+										<div class="toys24__text">Для нас важно, чтобы среди наших товаров были позиции и для новичков, и для подвинутых, и для добрых приколов, поэтому ассортимент постоянно пополняется. 
+										</div>
+									</div>
+								</div>
+								<div class="toys24__item">
+									<div class="toys24__icon">
+										<img src="img/icon-gift.svg" alt="">
+									</div>
+									<div class="toys24__content">
+										<div class="toys24__title">Приятные бонусы. </div>
+										<div class="toys24__text">Бесплатно выбирайте упаковку, получайте скидку за оплату картой, а также бутылку хорошего шампанского в подарок, которое не стыдно поставить на стол. 
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-12">
+								<div class="toys24__item">
+									<div class="toys24__icon">
+										<img src="img/icon-delivery.svg" alt="">
+									</div>
+									<div class="toys24__content">
+										<div class="toys24__title">Бесплатная доставка. </div>
+										<div class="toys24__text">Несколько вариантов доставки, включая экспресс, чтобы вы обязательно успели получить заказ в нужный момент.
+										</div>
+									</div>
+								</div>
+								<div class="toys24__item">
+									<div class="toys24__icon">
+										<img src="img/icon-hands.svg" alt="">
+									</div>
+									<div class="toys24__content">
+										<div class="toys24__title">Качественный сервис.</div>
+										<div class="toys24__text">Своевременная доставка, удобные варианты оплаты, простая навигация по сайту — об этих деталях мы также позаботились.
+										</div>
+									</div>
+								</div>
+								<div class="toys24__item">
+									<div class="toys24__icon">
+										<img src="img/icon-pazle.svg" alt="">
+									</div>
+									<div class="toys24__content">
+										<div class="toys24__title">Индивидуальные наборы. </div>
+										<div class="toys24__text">Предлагаем не только готовые наборы, но и подбор индивидуального комплекта по вашему вкусу.
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- //row -->
+				</div>
+			</div>
+
+			<div class="inted">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-sm-12">
+							<div class="inted__title">Давно собирались купить что-нибудь эдакое, да руки не доходили?</div>
+							<div class="inted__text">Сегодня действует скидка 20%. Торопитесь!</div>
+							<a href="#" class="button button--buy button--found">ВЫБРАТЬ ПОДАРОК</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="delivery" id="delivery">
+				<div class="container">
+					<div class="row">
+						<div class="base-title">Правила оплаты и доставки — все открыто и понятно</div>
+					</div>
+					<div class="row">
+
+						<div class="col-md-6 col-sm-12">
+							<div class="delivery__item">
+								<div class="delivery__icon">
+									<img src="img/icon-delivery2.svg" alt="">
+									<div class="anonim"><div>100%</div>анонимность</div>
+								</div>
+								<div class="delivery__title">Доставка и самовывоз</div>
+								<div class="delivery__text"><span>Самовывоз г.Москва, ул.Паршина, д.4, офис 215</span> <br>Ежедневно с 10:00 до 20:00</div>
+								<div class="delivery__text"><span>Доставка по Москве (в пределах МКАД) - БЕСПЛАТНО!</span><br>При заказе после 12:00 - Доставка на следующий рабочий день</div>
+								<div class="delivery__text"><span>Доставка по Московской области - 500 руб.</span><br>Срок доставки 1-2 рабочих дня</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12">
+							<div class="delivery__item">
+								<div class="delivery__icon">
+									<img src="img/icon-buy.svg" alt="">
+								</div>
+								<div class="delivery__title">Оплата</div>
+								<div class="delivery__text"><span>Картой при оформлении заказа</span></div>
+								<div class="delivery__text"><span>Наличными курьеру</span></div>
+								<div class="delivery__text"><span>Безналичный расчет (для физических и юридических лиц)</span></div>
+								<div class="delivery__text"><span>Яндекс.Деньги</span></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row text-center" id="return">
+						<div class="return">
+							<div class="return__title">Обмен и возврат</div>
+							<div class="return__text">Гарантируем обмен или возврат товара в течение 14 дней после получения заказа!<br>Без лишних вопросов и документов.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="discussion">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<div class="discussion__title">Обсуждали с партнером, не попробовать ли вам секс игрушки?</div>
+							<div class="discussion__text">Выбирайте и заказывайте со скидкой 20%!</div>
+							<a href="#" class="button button--buy button--found">ВЫБРАТЬ ПОДАРОК</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="surpise" id="surpise">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-sm-12">
+							<div class="surpise__title base-title">Секс-шоп «Toys42» приготовил для вас много интересного </div>
+							<div class="surpise__text">
+								<p>Секс-шоп «Toys42» — один из крупнейших онлайн-магазинов взрослых игрушек в Москве. Мы предлагаем только качественные оригинальные товары, которые позволяют привнести разнообразие в интимную жизнь, от ведущих торговых марок секс-индустрии. Товар сертифицирован. На отдельные позиции распространяется гарантия производителя до 2 лет.</p>
+								<p>Мы нацелены на активное развитие и стабильное расширение, поэтому постоянно ищем и находим надежных партнеров-поставщиков, расширяем ассортимент, совершенствуем методы упаковки и доставки и устраиваем интересные акции к праздникам. Регулярно заходите к нам на сайт, чтобы успеть воспользоваться выгодными предложениями к важной для вас дате.</p>
+							</div>
+							<a href="#" class="button button--buy button--found button--surpise">Посетить наш интернет-магазин</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="reviews" id="reviews">
+				<div class="container">
+					<div class="base-title">Эротические наборы пользуются спросом</div>
 				</div>
 
-				<div class="col xl3 favorite-cocktails l12">
-					<div class="col xl12 l12 m12 favorite-cocktails__title base-title"><img src="img/icon2.png" alt="icon"><span>Любимые коктейли</span></div>
-
-					<div class="col xl12 l6 m6 s12 favorite-cocktails__item hoverable">
-						<div class="favorite-cocktails__item_avatar">
-							<img src="img/avatar_small.png" alt="ava">
-						</div>
-						<div class="favorite-cocktails__item_content">
-							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-							<div class="favorite-cocktails__item_based">
-								<div class="item_based_text">На основе:</div>
-								<div class="item_based_name">Текилы</div>
-							</div>	
-							<div class="item_rating_star">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-							</div>
-							<div class="favorite-drinks__item_statistics">
-								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-							</div>
+				<div class="slider">
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
 					</div>
-
-					<div class="col xl12 l6 m6 s12 favorite-cocktails__item hoverable">
-						<div class="favorite-cocktails__item_avatar">
-							<img src="img/avatar_small.png" alt="ava">
-						</div>
-						<div class="favorite-cocktails__item_content">
-							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-							<div class="favorite-cocktails__item_based">
-								<div class="item_based_text">На основе:</div>
-								<div class="item_based_name">Текилы</div>
-							</div>	
-							<div class="item_rating_star">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-							</div>
-							<div class="favorite-drinks__item_statistics">
-								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-							</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
 					</div>
-
-					<div class="col xl12 l6 m6 s12 favorite-cocktails__item hoverable">
-						<div class="favorite-cocktails__item_avatar">
-							<img src="img/avatar_small.png" alt="ava">
-						</div>
-						<div class="favorite-cocktails__item_content">
-							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-							<div class="favorite-cocktails__item_based">
-								<div class="item_based_text">На основе:</div>
-								<div class="item_based_name">Текилы</div>
-							</div>	
-							<div class="item_rating_star">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-							</div>
-							<div class="favorite-drinks__item_statistics">
-								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-							</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
 					</div>
-
-					<div class="col xl12 l6 m6 s12 favorite-cocktails__item hoverable">
-						<div class="favorite-cocktails__item_avatar">
-							<img src="img/avatar_small.png" alt="ava">
-						</div>
-						<div class="favorite-cocktails__item_content">
-							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-							<div class="favorite-cocktails__item_based">
-								<div class="item_based_text">На основе:</div>
-								<div class="item_based_name">Текилы</div>
-							</div>	
-							<div class="item_rating_star">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-							</div>
-							<div class="favorite-drinks__item_statistics">
-								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-							</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
 					</div>
-
-					<div class="col xl12 l6 m6 s12 favorite-cocktails__item hoverable">
-						<div class="favorite-cocktails__item_avatar">
-							<img src="img/avatar_small.png" alt="ava">
-						</div>
-						<div class="favorite-cocktails__item_content">
-							<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-							<div class="favorite-cocktails__item_based">
-								<div class="item_based_text">На основе:</div>
-								<div class="item_based_name">Текилы</div>
-							</div>	
-							<div class="item_rating_star">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-							</div>
-							<div class="favorite-drinks__item_statistics">
-								<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-								<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-							</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
 					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="content">
-		<div class="container">
-			<div class="row">
-
-				<div class="content-wrap">
-					<div class="col xl4 l12 m6 s12 recipes">
-						<div class="col xl12 favorite-cocktails__title base-title"><img src="img/icon-text.png" alt="icon-text.png"><span>Новые рецепты коктейлей</span></div>
-
-						<div class="col xl12 m6 s12 recipes-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/avatar_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-								<div class="favorite-cocktails__item_based">
-									<div class="item_based_text">На основе:</div>
-									<div class="item_based_name">Текилы</div>
-								</div>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
-
-						<div class="col xl12 m6 s12 recipes-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/avatar_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-								<div class="favorite-cocktails__item_based">
-									<div class="item_based_text">На основе:</div>
-									<div class="item_based_name">Текилы</div>
-								</div>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 m6 s12 recipes-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/avatar_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-								<div class="favorite-cocktails__item_based">
-									<div class="item_based_text">На основе:</div>
-									<div class="item_based_name">Текилы</div>
-								</div>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 m6 s12 recipes-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/avatar_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-								<div class="favorite-cocktails__item_based">
-									<div class="item_based_text">На основе:</div>
-									<div class="item_based_name">Текилы</div>
-								</div>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 m6 s12 recipes-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/avatar_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
-								<div class="favorite-cocktails__item_based">
-									<div class="item_based_text">На основе:</div>
-									<div class="item_based_name">Текилы</div>
-								</div>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-					
-					<div class="col xl4 l6  m12 s12 reviews">
-						<div class="col xl12 m12 s12 favorite-cocktails__title base-title">
-							<img src="img/icon-review.png" alt="icon"><span>Новые отзывы</span>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
-
-						<div class="col xl12 l6 m6 s12 reviews-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<div class="reviews_name">Антон Емельянов</div>
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="read_review"><span>Читать отзыв</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 l6 m6 s12 reviews-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<div class="reviews_name">Антон Емельянов</div>
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="read_review"><span>Читать отзыв</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 l6 m6 s12 reviews-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<div class="reviews_name">Антон Емельянов</div>
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="read_review"><span>Читать отзыв</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 l6 m6 s12 reviews-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<div class="reviews_name">Антон Емельянов</div>
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="read_review"><span>Читать отзыв</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 l6 m6 s12 reviews-item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<div class="reviews_name">Антон Емельянов</div>
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>	
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="read_review"><span>Читать отзыв</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-
 					</div>
-					
-					<div class="col xl4 m12 s12 new-drinks">
-						<div class="col xl12 m12 favorite-cocktails__title base-title"><img src="img/icon3.png" alt="icon"><span>Новые напитки</span></div>
-
-						<div class="col xl12 m6 s12 new-drinks_item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
-
-						<div class="col xl12 m6 s12 new-drinks_item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
-
-						<div class="col xl12 m6 s12 new-drinks_item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__name">Оксана</div>
+						<div class="slider__review">
+							Друзья преподнесли мне ваш эротический набор на день рождения, и я ответила им тем же — все довольны. Спасибо вам.
 						</div>
-
-						<div class="col xl12 m6 s12 new-drinks_item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col xl12 m6 s12 new-drinks_item base_content_item hoverable">
-							<div class="favorite-cocktails__item_avatar">
-								<img src="img/product_small.png" alt="ava">
-							</div>
-							<div class="favorite-cocktails__item_content">
-								<a href="javascript:void(0)" class="favorite-cocktails__item_title title_review">Водка "Абрикон Голд" Абрикосовая 0,7</a>
-								<div class="base_content_item_wrap">
-									<div class="item_rating_star">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star-half-o" aria-hidden="true"></i>
-									</div>
-									<div class="favorite-drinks__item_statistics">
-										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a> <br>
-										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
 					</div>
 				</div>
 
 			</div>
-		</div>
-	</div>
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col xl3 l12 s12">
-					<div class="col xl12 l6 s12">
-						<div class="logo_block">
-							<a href="index.html" class="logo"><img src="img/logo.png" alt="Alcoquide"></a>
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact__content">
+					<div class="contact__item">
+						<div class="base-title">Контакты</div>
+						<div class="phone-block">
+							<a href="tel:+74952011842">+7 (495) 201-18-42</a>
+							<span>Принимаем звонки ежедневно с 10 до 22</span>
 						</div>
+						<div class="addreess"><span>Адрес нашего магазина</span> <br> г.Москва, ул.Паршина, <br> д.4, офис 215</div>	
 					</div>
-					<div class="col xl12 l6 m12 s12 footer_lang">
-						<ul class="list-lang">
-							<li class="list-lang__item"><a href="#"><img src="img/lang_ru.png"></a></li>
-							<li class="list-lang__item"><a href="#"><img src="img/lang_en.png"></a></li>
+					<div class="contact__item">
+						<ul class="social__list">
+							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 						</ul>
-						<div class="logo_descr">Все об алкоголе</div>
+						<div class="phone-block">
+							<a href="tel:+79092011842">+7 (909) 201-18-42</a>
+							<span>Viber, Whatsapp, Telegram</span>
+						</div>
+						<div class="work-time">Режим работы: <br> ПН-ПТ с 10:00 до 20:00, <br> СБ-ВС Выходной</div>
 					</div>
-				</div>
-				<div class="col xl1">
-					<div class="age_limit">18<span>+</span></div>
-				</div>
-				<div class="col xl4 m12 s12 copyright_wrap"><div class="copyright">© 2017, ООО «Alcoguide». Все права защищены.</div></div>
-				<div class="col xl4 m12 s12 footer_menu">
-					<ul class="menu">
-						<li class="menu_item">
-							<a href="#" class="menu_list">Рейтинги</a>
-							<a href="#" class="menu_list">Коктейли</a>
-							<a href="#" class="menu_list">Обзоры</a>
-							<a href="#" class="menu_list">Тосты</a>
-						</li>
-					</ul>
-					<div class="agreement"><a href="#">Пользовательское соглашение</a></div>
+					<form class="form__contact">
+						<div class="form__title">Напишите нам</div>
+						<input type="tel" name="phone" placeholder="Телефон (необязательно)">
+						<input class="email" type="email" name="email" placeholder="Электронная почта (для обратной связи)" required>
+						<textarea class="form__message" name="text" placeholder="Текст Вашего сообщения" required></textarea>
+						<button class="button button--buy button--surpise">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+					</form>
 				</div>
 			</div>
+
+			<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.228430579152!2d37.454853715674254!3d55.7892712805631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548f0638c27dd%3A0x3648492bf9d5aa22!2sUlitsa+Parshina%2C+25%2C+Moskva%2C+Russia%2C+123103!5e0!3m2!1sen!2sua!4v1512913814842"  frameborder="0" style="border:0" allowfullscreen></iframe></div>
 		</div>
-	</footer>
+		</main>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="copyright">© 2017 Toys42.ru - Все права защищены</div>
+					</div>
+					<div class="col-md-6">
+						<div class="limitation">
+							<div class="limitation__item">
+								<div class="icon">18+</div>
+								<div>Внимание! На сайте присутствуют <br> материалы для взрослых.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div><!-- //wrapper -->
 	
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
+	<div class="hidden"></div>
 
+
+
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
+	
 </body>
 </html>

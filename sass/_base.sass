@@ -1,0 +1,99 @@
+ul
+	padding: 0
+	margin: 0
+	li
+		list-style: none
+		display: inline-block
+		a
+			color: #000
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none	
+
+p
+	padding: 0
+	margin: 0
+
+h1,h2,h3,h4
+	padding: 0
+	margin: 0
+
+.wrapper
+	display: block
+	width: 100%
+	max-width: 1580px
+	margin: 0 auto
+
+.flex-grid
+	display: flex
+
+.button
+	display: inline-block
+	color: #fff
+	text-decoration: none
+	text-align: center
+	font-size: 16px
+	border-radius: 30px
+	min-width: 180px
+	border: none
+	padding: 15px 42px
+	background-image: linear-gradient(30deg, #f5576c 0%, #f461ec 100%)
+	transition: all 0.3s ease-in-out
+	&:hover
+		text-decoration: none
+		color: #fff
+		background-image: linear-gradient(30deg, #f461ec 0%, #f5576c 100%)
+	&:focus
+		text-decoration: none
+		color: #fff
+	&:visited
+		color: #fff
+		text-decoration: none
+
+.button--buy
+	position: relative
+	text-transform: uppercase
+	font-weight: 600
+	width: 100%
+	padding: 15px 50px
+	height: 60px
+	max-width: 230px
+	&:before
+		content:""
+		display: block
+		width: 242px
+		height: 70px
+		position: absolute
+		left: -12px
+		top: -34px
+		background-image: url("../img/snow.png")
+		background-size: cover
+
+.button--found
+	max-width: 270px
+	&:before
+		width: 290px
+		height: 80px
+		position: absolute
+		left: -13px
+		top: -42px
+.base-title
+	text-align: center
+
+.button--surpise  
+	max-width: 400px
+	padding-left: 0
+	padding-right: 0
+	&:before
+		width: 420px
+		height: 80px
+		position: absolute
+		left: -13px
+		top: -40px
+		background-image: url("../img/show2.png")
+		background-size: contain
+		background-repeat: no-repeat													

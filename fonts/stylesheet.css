@@ -1,0 +1,132 @@
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Light.eot');
+    src: url('Circe-Light.eot?#iefix') format('embedded-opentype'),
+        url('Circe-Light.woff2') format('woff2'),
+        url('Circe-Light.woff') format('woff'),
+        url('Circe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Slab Pro';
+    src: url('PFAgoraSlabPro-BoldItalic.eot');
+    src: url('PFAgoraSlabPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSlabPro-BoldItalic.woff2') format('woff2'),
+        url('PFAgoraSlabPro-BoldItalic.woff') format('woff'),
+        url('PFAgoraSlabPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Agora Slab Pro';
+    src: url('PFAgoraSlabPro-Regular.eot');
+    src: url('PFAgoraSlabPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSlabPro-Regular.woff2') format('woff2'),
+        url('PFAgoraSlabPro-Regular.woff') format('woff'),
+        url('PFAgoraSlabPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Slab Pro';
+    src: url('PFAgoraSlabPro-Bold.eot');
+    src: url('PFAgoraSlabPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSlabPro-Bold.woff2') format('woff2'),
+        url('PFAgoraSlabPro-Bold.woff') format('woff'),
+        url('PFAgoraSlabPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Regular.eot');
+    src: url('Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Circe-Regular.woff2') format('woff2'),
+        url('Circe-Regular.woff') format('woff'),
+        url('Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe Extra';
+    src: url('Circe-ExtraLight.eot');
+    src: url('Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Circe-ExtraLight.woff2') format('woff2'),
+        url('Circe-ExtraLight.woff') format('woff'),
+        url('Circe-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Serif Pro';
+    src: url('PFAgoraSerifPro-Italic.eot');
+    src: url('PFAgoraSerifPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSerifPro-Italic.woff2') format('woff2'),
+        url('PFAgoraSerifPro-Italic.woff') format('woff'),
+        url('PFAgoraSerifPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circe Extra';
+    src: url('Circe-ExtraBold.eot');
+    src: url('Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Circe-ExtraBold.woff2') format('woff2'),
+        url('Circe-ExtraBold.woff') format('woff'),
+        url('Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Serif Pro';
+    src: url('PFAgoraSerifPro-Bold.eot');
+    src: url('PFAgoraSerifPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSerifPro-Bold.woff2') format('woff2'),
+        url('PFAgoraSerifPro-Bold.woff') format('woff'),
+        url('PFAgoraSerifPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Serif Pro';
+    src: url('PFAgoraSerifPro-Regular.eot');
+    src: url('PFAgoraSerifPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSerifPro-Regular.woff2') format('woff2'),
+        url('PFAgoraSerifPro-Regular.woff') format('woff'),
+        url('PFAgoraSerifPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('Circe-Bold.eot');
+    src: url('Circe-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Circe-Bold.woff2') format('woff2'),
+        url('Circe-Bold.woff') format('woff'),
+        url('Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Agora Serif Pro';
+    src: url('PFAgoraSerifPro-BoldItalic.eot');
+    src: url('PFAgoraSerifPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFAgoraSerifPro-BoldItalic.woff2') format('woff2'),
+        url('PFAgoraSerifPro-BoldItalic.woff') format('woff'),
+        url('PFAgoraSerifPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
