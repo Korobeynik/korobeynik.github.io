@@ -6,11 +6,8 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
-// ≥992px
-+media-breakpoint-down(md)
-
 // ≥768px
-+media-breakpoint-down(sm)
+@media only screen and (max-width: 1100px)
 	body,html
 		overflow-x: hidden
 	.st-content
@@ -35,6 +32,7 @@
 			margin: 0 auto
 	.promo-text
 		width: 100%
+		max-width: 100%
 		text-align: center
 		font-size: 14px
 		margin-bottom: 20px
@@ -98,12 +96,17 @@
 	.content-text
 		font-size: 14px
 		margin-bottom: 25px
+		max-width: 100%
+		padding: 0 2%
 	.st-menu ul li a
 		font-size: 20px
 	.principles-header .principles-title,
 	.principles-header .thin
 		font-size: 26px
 		line-height: 40px
+		width: 100%
+	.principles-header .thin
+		margin-bottom: 20px
 	.principles-header .principles-title span
 		line-height: 36px
 	.principles-header
@@ -173,28 +176,51 @@
 		position: static !important		
 		left: 0
 		z-index: 1
+		width: 100%
 
 	div#rev-3
 		position: static !important		
 		right: 0
 		z-index: 1
+		width: 100%
 
 	div#rev-5
 		position: static !important		
 		left: 0
 		top: 15px
 		z-index: 1
+		width: 100%
 
 	div#rev-7
 		position: static !important		
 		right: 0
 		z-index: 1
+		width: 100%
 	.block-revealer__content
-		opacity: 1 !important		
+		opacity: 1 !important
+	.block-revealer__element
+		display: none !important	
+	#st-trigger-effects
+		width: 100%			
 																																			
 // ≥576px
 +media-breakpoint-down(xs)
 
+@media only screen and (max-width: 320px)
+	.promo
+		height: 100vh
+	.promo .logo svg
+		max-width: 40%
+	.promo-text
+		font-size: 12px
+	.base-btn
+		height: 50px
+	.marketing-list li
+		font-size: 12px
+	.thank-title
+		font-size: 60px	
+	.st-menu .main-menu li
+		margin-bottom: 5px					
 
 /*==========  Mobile First  ==========*/
 
