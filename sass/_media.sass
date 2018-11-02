@@ -1,85 +1,211 @@
-@import "bourbon"
-
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1600px)
-	/**/
-	.applications
-		//padding: 450px 0
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@import "vars"
 
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-	.confidentiality__number
-		&:after
-			content: ""
-			display: none
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+	body,html
+		overflow-x: hidden
+	.st-content
+		overflow-x: hidden	
+	.st-content-inner
+		margin: 0
+	#st-trigger-effects
+		width: 100%
+	.base-content
+		margin-top: 0
+		padding-bottom: 30px
+	.promo-content
+		position: relative
+		flex-wrap: wrap
+	.promo .logo
+		text-align: center
+		top: 40px
+		margin-bottom: 20px
+		svg
+			//width: 100px
+			max-width: 50%
+			margin: 0 auto
+	.promo-text
+		width: 100%
+		text-align: center
+		font-size: 14px
+		margin-bottom: 20px
+	.promo-social
+		width: 100%
+	.social
+		max-width: 100%
+	.social-list
+		justify-content: center
+		margin-bottom: 30px
+	.base-btn
+		right: 0
+		max-width: 310px
+		margin: 0 auto
+	.scroll
+		width: 50px
+		height: 50px
+		bottom: 0
+	.base-btn:before
+		left: 2px
+		width: 99%
+	.download-button svg
+		margin-left: -40px
+	.base-content.right .container .content-image
+		position: static
+		width: 100% !important
+		height: 400px
+	.base-content.left .container .content-image
+		position: static
+		width: 100% !important
+		height: 400px	
+	.base-content.right .container
+		flex-wrap: wrap
+	.base-content.left .container
+		flex-wrap: wrap
+		justify-content: flex-end		
+	.base-content
+		margin: 0
+		padding-top: 0 !important
+	.base-content .content-item
+		width: 100%
+	.base-content.right .container .content-item
+		padding: 10px
+		text-align: center
+	.base-content.left .container .content-item
+		padding-right: 0
+		text-align: center	
+	.base-content.right .container .content-tittle
+		left: 8%
+		top: 25%
+		font-size: 70px
+	.base-content.left .container .content-tittle
+		left: 8%
+		top: 25%
+		font-size: 70px	
+	#kometa
+		.content-tittle
+			font-size: 70px !important		
+	.content-logo
+		margin-bottom: 30px
+	.content-text
+		font-size: 14px
+		margin-bottom: 25px
+	.st-menu ul li a
+		font-size: 20px
+	.principles-header .principles-title,
+	.principles-header .thin
+		font-size: 26px
+		line-height: 40px
+	.principles-header .principles-title span
+		line-height: 36px
+	.principles-header
+		flex-wrap: wrap
+	.principles-header svg
+		margin: 0 auto
+		width: 140px
+	.principles-grid .principles-item
+		width: 100%
+	.principles-grid
+		padding-top: 0
+	.marketing-content
+		flex-wrap: wrap
+		flex-direction: column-reverse
+	.marketing .marketing-title
+		font-size: 26px
+		padding: 0 10px
+		line-height: 35px
+		text-align: center
+		margin-bottom: 30px
+	.base-section
+		margin: 0	
+	div#marketing
+		padding: 0
+	.marketing-list
+		top: 0
+		max-width: auto
+		width: 100%
+		margin-left: 60px
+	.marketing-list li
+		margin-bottom: 25px	
+	.marketing-list li:before
+		left: -45px
+		top: -5px
+	.marketing-video
+		bottom: 0
+	.thank-title
+		font-size: 70px
+	.principles-slide
+		width: 100%
+		display: flex
+		flex-direction: column
+	.owl-nav
+		margin-top: 20px
+		display: flex
+		justify-content: space-around	
+	button.owl-prev,
+	button.owl-next
+		width: 48px
+		height: 48px
+		background-color: #ed1c24 !important
+		span
+			font-size: 35px
+			font-weight: 100
+			display: block
+			width: 100%
+			height: 100%
+			line-height: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+	.item-block.item-image
+		position: static !important		
+	.animate-image
+		width: 100%
+	div#rev-1
+		position: static !important		
+		left: 0
+		z-index: 1
+
+	div#rev-3
+		position: static !important		
+		right: 0
+		z-index: 1
+
+	div#rev-5
+		position: static !important		
+		left: 0
+		top: 15px
+		z-index: 1
+
+	div#rev-7
+		position: static !important		
+		right: 0
+		z-index: 1
+	.block-revealer__content
+		opacity: 1 !important		
+																																			
+// ≥576px
++media-breakpoint-down(xs)
 
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
+/*==========  Mobile First  ==========*/
 
+// ≤576px
++media-breakpoint-up(sm)
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+// ≤768px
++media-breakpoint-up(md)
 
+// ≤992px
++media-breakpoint-up(lg)
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+// ≤1200px
++media-breakpoint-up(xl)
